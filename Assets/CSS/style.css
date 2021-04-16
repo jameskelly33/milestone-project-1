@@ -29,13 +29,12 @@ nav {
 /*-----------------Homepage Main Section--------------------*/
 
 .hero-img {
+    background-image: url("../images/background-img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 800px;
     width: 100%;
-    background-image: url("../images/ielts.jpeg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
 
 }
 
@@ -69,7 +68,7 @@ nav {
 }
 
 
-/*--------------Bottom section-------------------------*/
+/*--------------Homepage Learn More section-------------------------*/
 
 
 .about {
@@ -102,19 +101,11 @@ nav {
 
 }
 
-.hero-img {
-    background-image: url("../images/background-img.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-    width: 100%;
 
-}
 
 .learn-more {
-    margin-top: 30px;
-    ;
+    margin-top: 20px;
+
 }
 
 /*----------------footer-----------------*/
@@ -137,17 +128,15 @@ footer {
         margin-right: 50px;
     }
 
-
-
-}
-
-@media screen and (max-width:500px) {
     .hero-img {
         height: 500px;
     }
+
+
 }
 
-@media screen and (min-width:500px) {
+
+@media screen and (min-width:600px) {
 
     .cover-heading,
     .cover-sub-heading {
@@ -159,5 +148,14 @@ footer {
         position: absolute;
         left: 65px;
 
+    }
+}
+
+@media screen and (min-width:600px) {
+
+    .about,
+    .contact,
+    .faq {
+        height: 300px
     }
 }

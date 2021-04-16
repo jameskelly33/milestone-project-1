@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+/*-----------------Nav Bar--------------------*/
+
+nav {
+    background-color: #E1E0E0;
+}
+
+.navbar-brand {
+    letter-spacing: 4px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+}
+
+.nav-link {
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*-----------------Main Section--------------------*/
+
+.hero-img {
+    height: 800px;
+    width: 100%;
+    background-image: url("../images/ielts.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+}
+
+.cover-heading {
+    font-family: "Karla", sans-serif;
+    color: aliceblue;
+    font-size: 42px;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 30px;
+    text-shadow: #E1E0E0 0px 0px 2px;
+    letter-spacing: 2px;
+
+
+
+}
+
+.cover-sub-heading {
+    font-family: 'Karla', sans-serif;
+    color: aliceblue;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-shadow: white 0px 0px 1px;
+
+
+}
+
+.download {
+    margin-top: 10px;
+}
+
+
+/*--------------Bottom section-------------------------*/
+
+
+.about {
+    font-family: 'Karla', sans-serif;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    ;
+
+}
+
+.contact {
+    font-family: 'Karla', sans-serif;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+}
+
+.faq {
+    font-family: 'Karla', sans-serif;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+}
+
+.hero-img {
+    background-image: url("../images/background-img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+
+}
+
+.learn-more {
+    margin-top: 30px;
+    ;
+}
+
+/*----------------footer-----------------*/
+footer {
+    font-family: 'Karla', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .cover-heading {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .cover-sub-heading {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 170px;
+        margin-right: 50px;
+    }
+
+
+
+}
+
+@media screen and (max-width:500px) {
+    .hero-img {
+        height: 500px;
+    }
+
+
+}
+
+@media screen and (min-width:500px) {
+
+    .cover-heading,
+    .cover-sub-heading {
+        text-align: left;
+        position: relative;
+    }
+
+    .download {
+        position: absolute;
+        left: 65px;
+
+    }
+}

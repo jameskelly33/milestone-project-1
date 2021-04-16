@@ -30,6 +30,10 @@ This site will meet these goals because
 *   An ‘About Me’ page will provide the student with information about the tutor’s experience and provide testimonials from ex-students. 
 *   A free PDF lesson will be available to download to give the student an example of the teaching methods and style of the tutor.
 
+## **Wireframes**
+
+[Wireframes](https://github.com/jameskelly33/milestone-project-1/blob/c57ec6087be795c3753774a309c4ae3db7b64b43/Wireframes/wireframes.bmpr)
+
 
 ### **User Story**
 	
@@ -66,7 +70,7 @@ The site contains four pages:
 * [HTML5](https://html.com/html5/)
 * [CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
 * [Bootstrap 4](https://getbootstrap.com/)
-    * Imported CSS and JS, utilised grid system, navbar, from control and accordian components.
+    * Imported CSS and JS, utilised grid system, navbar, form control and accordian components.
 
  
 

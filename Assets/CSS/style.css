@@ -104,7 +104,13 @@ nav {
 
 
 .learn-more {
-    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0px;
+    margin-bottom: 25x;
+
+
 
 }
 
@@ -151,11 +157,38 @@ footer {
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:320px) {
+    .card-body {
+        min-height: 400px;
+    }
+}
 
-    .about,
-    .contact,
-    .faq {
-        height: 300px
+@media screen and (min-width:375px) {
+    .card-body {
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .card-body {
+        min-height: 325px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card-body {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .card-body {
+        min-height: 400px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .card-body {
+        min-height: 275px;
     }
 }

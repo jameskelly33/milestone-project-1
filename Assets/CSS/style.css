@@ -114,6 +114,13 @@ nav {
 
 }
 
+/*----------------About Me Main Section-----------------*/
+
+.profile-img {
+    background-color: beige;
+    height: 600px;
+}
+
 /*----------------footer-----------------*/
 footer {
     font-family: 'Karla', sans-serif;

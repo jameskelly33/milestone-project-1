@@ -4,7 +4,9 @@
     border: 0;
 }
 
-
+body {
+    font-family: 'Karla', sans-serif;
+}
 
 /*-----------------Nav Bar--------------------*/
 
@@ -16,11 +18,9 @@ nav {
     letter-spacing: 4px;
     font-size: 32px;
     font-weight: bold;
-    font-family: 'Karla', sans-serif;
 }
 
 .nav-link {
-
     font-size: 20px;
     font-weight: bold;
 }
@@ -29,50 +29,58 @@ nav {
 /*-----------------Homepage Main Section--------------------*/
 
 .hero-img {
+    background: rgb(50, 116, 166);
+    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
     background-image: url("../images/background-img.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 500px;
     width: 100%;
 
 }
 
 .cover-heading {
-    font-family: "Karla", sans-serif;
     color: aliceblue;
-    font-size: 42px;
-    margin-top: 80px;
+    font-size: 38px;
+    margin-top: 60px;
     margin-left: 50px;
     margin-right: 30px;
     text-shadow: #E1E0E0 0px 0px 2px;
     letter-spacing: 2px;
+    text-align: center;
 
 
 
 }
 
 .cover-sub-heading {
-    font-family: 'Karla', sans-serif;
     color: aliceblue;
+    font-size: 20px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-right: 50px;
+    margin-top: 175px;
     text-shadow: white 0px 0px 1px;
+    text-align: center;
+
 
 
 }
 
 .download {
     margin-top: 10px;
+    margin-bottom: 20px;
 
 }
 
 
 /*--------------Homepage Learn More section-------------------------*/
 
+.card-body {
+    height: 400px;
+}
 
 .section-details {
-    font-family: 'Karla', sans-serif;
     height: 400px;
     margin-left: 30px;
     margin-top: 30px;
@@ -85,9 +93,6 @@ nav {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 0px;
-    margin-bottom: 25x;
-
 
 
 }
@@ -99,81 +104,70 @@ nav {
     height: 600px;
 }
 
-/*----------------footer-----------------*/
-footer {
-    font-family: 'Karla', sans-serif;
-}
+/*----------------Media Queries-----------------*/
 
+@media screen and (min-width:720px) {
+    .hero-img {
+        height: 800px;
+    }
 
-
-@media screen and (max-width: 600px) {
     .cover-heading {
-        font-size: 38px;
-        text-align: center;
+        margin-top: 200px;
+        font-size: 50px;
     }
 
     .cover-sub-heading {
-        font-size: 20px;
-        text-align: center;
-        margin-top: 170px;
-        margin-right: 50px;
+        font-size: 32px;
+        margin-top: 300px;
     }
-
-    .hero-img {
-        height: 500px;
-    }
-
-
 }
 
+@media screen and (min-width:1024px) {
+    .cover-heading {
+        text-align: left;
+        margin-top: 50px;
+        position: relative;
+    }
 
-@media screen and (min-width:600px) {
-
-    .cover-heading,
     .cover-sub-heading {
         text-align: left;
+        margin-top: 30px;
         position: relative;
     }
 
     .download {
         position: absolute;
         left: 65px;
-
     }
 }
 
-@media screen and (min-width:320px) {
+
+
+@media screen and (min-width:992px) {
+
     .card-body {
         min-height: 400px;
     }
-}
 
-@media screen and (min-width:375px) {
-    .card-body {
-        min-height: 350px;
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 30px
     }
 }
 
-@media screen and (min-width:425px) {
-    .card-body {
-        min-height: 325px;
-    }
-}
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1440px) {
+
     .card-body {
         min-height: 300px;
     }
-}
 
-@media screen and (min-width:1024px) {
-    .card-body {
-        min-height: 400px;
-    }
-}
-
-@media screen and (min-width:1440px) {
-    .card-body {
-        min-height: 275px;
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 100px
     }
 }

@@ -99,9 +99,22 @@ nav {
 
 /*----------------About Me Main Section-----------------*/
 
+.section-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .profile-img {
-    background-color: beige;
-    height: 600px;
+    margin-bottom: 30px;
+}
+
+.profile-txt {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.testamonials {
+    margin-bottom: 50px;
 }
 
 /*----------------Media Queries-----------------*/
@@ -169,5 +182,12 @@ nav {
         left: 50%;
         transform: translate(-50%, 0);
         bottom: 100px
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .profile-txt {
+        font-size: 30px;
     }
 }

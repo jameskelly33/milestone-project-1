@@ -10,8 +10,9 @@ body {
 
 /*-----------------Nav Bar--------------------*/
 
-nav {
-    background-color: #E1E0E0;
+nav .navbar {
+    background: rgb(50, 116, 166);
+    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 32%, rgba(182, 216, 242, 1) 68%, rgba(182, 216, 242, 1) 69%);
 }
 
 .navbar-brand {
@@ -118,8 +119,6 @@ nav {
 }
 
 /*----------------Contact Page-----------------*/
-
-
 
 /*----------------Media Queries-----------------*/
 

@@ -48,16 +48,16 @@
                 <form>
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="email" class="form-control" id="name" aria-describedby="name"
-                            placeholder="Enter name"></div>
+                        <input type="text" class="form-control" id="name" aria-describedby="name"
+                            placeholder="Enter name" required></div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email"></div>
+                            placeholder="Enter email" required></div>
                     <div class="form-group">
                         <label for="nationality">Nationality</label>
-                        <select class="form-control" id="nationality">
-                            <option selected>Choose nationality...</option>
+                        <select class="form-control" id="nationality" required>
+                            <option value="" disabled selected>Choose your nationality</option>
                             <option value="afghan">Afghan</option>
                             <option value="albanian">Albanian</option>
                             <option value="algerian">Algerian</option>
@@ -253,8 +253,8 @@
                         </select></div>
                     <div class="form-group">
                         <label for="language">First Language</label>
-                        <select class="form-control" id="first-language">
-                            <option selected>Choose first language...</option>
+                        <select class="form-control" id="first-language" required">
+                            <option value="" disabled selected>Choose your first language</option>
                             <option value="Afrikaans">Afrikaans</option>
                             <option value="Albanian">Albanian</option>
                             <option value="Arabic">Arabic</option>
@@ -331,8 +331,8 @@
                         </select></div>
                     <div class="form-group">
                         <label for="level">Current English Level</label>
-                        <select class="form-control" id="level">
-                            <option selected>Choose level of English</option>
+                        <select class="form-control" id="level" required>
+                            <option value="" disabled selected>Chose your current English Level</option>
                             <option value="a1">A1 (Elementary)</option>
                             <option value="a1">A2 (Beginner)</option>
                             <option value="a1">B1 (Intermediate)</option>
@@ -343,7 +343,7 @@
                     </div>
                     <div class="form-group">
                         <label for="score">Required IELTS Score</label>
-                        <select class="form-control" id="score">
+                        <select class="form-control" id="score" required>
                             <option selected>Choose required score in IELTS</option>
                             <option value="a1">5.5 or lower</option>
                             <option value="a1">6</option>
@@ -389,15 +389,14 @@
                     </div>
                     <div class="form-group">
                         <label for="more-info">More information</label>
-                        <textarea class="form-control" id="more-info" rows="5"
-                            placeholder="Write any other inofrmation about you and your studies here."></textarea>
+                        <textarea class="form-control" id="more-info" rows="5" required
+                            placeholder="Tell me a little bit about you and your IELTS goals."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send</button>
 
             </div>
         </div>
     </section>
-
 
 
 

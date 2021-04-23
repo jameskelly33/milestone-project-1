@@ -120,6 +120,29 @@ nav .navbar {
 
 /*----------------Contact Page-----------------*/
 
+/*----------------FAQ Page-----------------*/
+
+.card-heading h2 {
+    font-size: 1.1rem;
+}
+
+.card-heading>a:before {
+    float: right !important;
+    content: "-";
+    padding-right: 5px;
+}
+
+.card-heading>a.collapsed:before {
+    float: right !important;
+    content: "+";
+}
+
+.card-heading>a:hover,
+.card-heading>a:active,
+.card-heading>a:focus {
+    text-decoration: none;
+}
+
 /*----------------Media Queries-----------------*/
 
 @media screen and (min-width:720px) {

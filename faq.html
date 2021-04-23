@@ -8,12 +8,13 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>IELTS 1-1</title>
 </head>
 
 <body>
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">
             IELTS 1-1</a>
@@ -43,19 +44,18 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-lg">
+            <div class="col">
                 <h1>Frequently Asked Questions</h1>
-                <div id="accordion">
+                <div class="accordian" id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
+                            <h2 class="card-heading mb-0">
+                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
                                     What is the price?
-                                </button>
-                            </h5>
+                                </a>
+                            </h2>
                         </div>
-
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordion">
                             <div class="card-body">
@@ -65,14 +65,16 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="card">
                         <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="card-heading mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
                                     How long is each lesson?
-                                </button>
-                            </h5>
+                                </a>
+                            </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
@@ -81,14 +83,16 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="card">
                         <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="card-heading mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
                                     How many lessons can I book?
-                                </button>
-                            </h5>
+                                </a>
+                            </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordion">
@@ -98,17 +102,18 @@
                                 to availabilty.
                             </div>
                         </div>
+
+
                         <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="card-heading mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
                                         Can I get a discount if I book more lessons?
-                                    </button>
-                                </h5>
+                                    </a>
+                                </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     Yes, if you book a block of 5 lessons the price will be €100. A block of 10 lessons
@@ -119,16 +124,15 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="card-heading mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
                                     How will the lessons be structured?
-                                </button>
-                            </h5>
+                                </a>
+                            </h2>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordion">
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                             <div class="card-body">
                                 I will email you the materials and give you time to do reading wirting and listening
                                 tasks which we ill then go through during the lesson. I will give you feedback, tips and
@@ -137,16 +141,15 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="card-heading mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
                                         How long will it take to reach my goal?
-                                    </button>
-                                </h5>
+                                    </a>
+                                </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     It depends on two things.
@@ -161,16 +164,15 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="card-heading mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseSeven">
                                         What materials do I need?
-                                    </button>
-                                </h5>
+                                    </a>
+                                </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     I will provide you with all the materials you don't need anything apart from a good
@@ -179,16 +181,15 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                            <div class="card-header" id="headingEight">
+                                <h2 class="card-heading mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseEight"
+                                        aria-expanded="false" aria-controls="collapseEight">
                                         Can you just mark my writing and speaking?
-                                    </button>
-                                </h5>
+                                    </a>
+                                </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
                                 data-parent="#accordion">
                                 <div class="card-body">
                                     Yes, if you just need marking services I can provide them. I still recommmend
@@ -203,8 +204,6 @@
             </div>
         </div>
     </div>
-
-
     <footer>
         © Copyright James Kelly 2021
     </footer>

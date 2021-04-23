@@ -4,16 +4,25 @@
     border: 0;
 }
 
-body {
+html body {
     font-family: 'Karla', sans-serif;
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: rgb(50, 116, 166);
+    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 32%, rgba(182, 216, 242, 1) 68%, rgba(182, 216, 242, 1) 69%);
 }
 
 /*-----------------Nav Bar--------------------*/
 
-nav .navbar {
-    background: rgb(50, 116, 166);
-    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 32%, rgba(182, 216, 242, 1) 68%, rgba(182, 216, 242, 1) 69%);
-}
+
+
 
 .navbar-brand {
     letter-spacing: 4px;
@@ -122,8 +131,17 @@ nav .navbar {
 
 /*----------------FAQ Page-----------------*/
 
-.card-heading h2 {
+.section-heading {
+    padding: 20px;
+
+}
+
+.card-header h2 {
     font-size: 1.1rem;
+}
+
+.card-body p {
+    font-size: 1.7rem;
 }
 
 .card-heading>a:before {
@@ -215,5 +233,19 @@ nav .navbar {
 
     .profile-txt {
         font-size: 30px;
+    }
+}
+
+@media screen and (min-width:720px) {
+
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .card-header h2 {
+        font-size: 1.7rem;
     }
 }

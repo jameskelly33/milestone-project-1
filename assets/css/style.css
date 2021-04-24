@@ -4,26 +4,11 @@
     border: 0;
 }
 
-html body {
-    font-family: 'Karla', sans-serif;
-    height: 100%;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background: rgb(50, 116, 166);
-    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 32%, rgba(182, 216, 242, 1) 68%, rgba(182, 216, 242, 1) 69%);
+body {
+    font-family: 'Pt Sans', sans-serif;
 }
 
 /*-----------------Nav Bar--------------------*/
-
-
-
-
 .navbar-brand {
     letter-spacing: 4px;
     font-size: 32px;
@@ -35,9 +20,7 @@ html body {
     font-weight: bold;
 }
 
-
 /*-----------------Homepage Main Section--------------------*/
-
 .hero-img {
     background: rgb(50, 116, 166);
     background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
@@ -47,7 +30,6 @@ html body {
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
-
 }
 
 .cover-heading {
@@ -59,9 +41,6 @@ html body {
     text-shadow: #E1E0E0 0px 0px 2px;
     letter-spacing: 2px;
     text-align: center;
-
-
-
 }
 
 .cover-sub-heading {
@@ -72,19 +51,18 @@ html body {
     margin-top: 175px;
     text-shadow: white 0px 0px 1px;
     text-align: center;
-
-
-
 }
 
 .download {
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 
-
 /*--------------Homepage Learn More section-------------------------*/
+
+.bottom-section {
+    margin-bottom: 60px;
+}
 
 .card-body {
     height: 400px;
@@ -96,15 +74,12 @@ html body {
     margin-top: 30px;
     margin-right: 30px;
     margin-bottom: 10px;
-
 }
 
 .btn-blue {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-
-
 }
 
 /*----------------About Me Main Section-----------------*/
@@ -128,20 +103,26 @@ html body {
 }
 
 /*----------------Contact Page-----------------*/
+.contact-form {
+    margin-bottom: 60px;
+}
 
 /*----------------FAQ Page-----------------*/
 
+.faq {
+    margin-bottom: 60px;
+}
+
 .section-heading {
     padding: 20px;
-
 }
 
 .card-header h2 {
     font-size: 1.1rem;
 }
 
-.card-body p {
-    font-size: 1.7rem;
+.card-text {
+    font-size: 1.5rem;
 }
 
 .card-heading>a:before {

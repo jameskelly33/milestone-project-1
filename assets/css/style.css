@@ -4,53 +4,15 @@
     border: 0;
 }
 
-
 html,
 body {
     height: 100%;
-}
-
-.faq {
-    min-height: 100%;
-}
-
-.contact-form {
-    min-height: 100%;
+    font-family: 'Pt Sans', sans-serif;
 }
 
 #main {
     overflow: auto;
     padding-bottom: 100px;
-}
-
-#footer {
-    background: rgb(50, 116, 166);
-    background: linear-gradient(105deg, rgb(104, 147, 180) 0%, rgba(2, 34, 59, 1) 100%);
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
-}
-
-.footer-logo {
-    letter-spacing: 4px;
-    font-size: 20px;
-    font-weight: bold;
-    color: aliceblue;
-    padding: 8px;
-    text-align: center;
-
-}
-
-.footer-text {
-    padding: 5px;
-    color: aliceblue;
-
-
-}
-
-body {
-    font-family: 'Pt Sans', sans-serif;
 }
 
 /*-----------------Nav Bar--------------------*/
@@ -109,7 +71,7 @@ body {
     margin-bottom: 60px;
 }
 
-.card-body {
+section-details .card-body {
     height: 400px;
 }
 
@@ -125,6 +87,38 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+
+/*----------------Footer-----------------*/
+
+#footer {
+    background: rgb(50, 116, 166);
+    background: linear-gradient(105deg, rgb(104, 147, 180) 0%, rgba(2, 34, 59, 1) 100%);
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+}
+
+.footer-logo {
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 8px;
+    text-align: center;
+}
+
+.footer-text {
+    padding: 5px;
+    color: aliceblue;
+}
+
+#footer,
+a:hover {
+    text-decoration: none;
+    color: aliceblue
 }
 
 /*----------------About Me Main Section-----------------*/
@@ -149,18 +143,23 @@ body {
 
 /*----------------Contact Page-----------------*/
 .contact-form {
+    min-height: 100%;
     margin-bottom: 60px;
 }
+
 
 /*----------------FAQ Page-----------------*/
 
 .faq {
     margin-bottom: 60px;
+    min-height: 100%;
 }
+
 
 .section-heading {
     padding: 20px;
 }
+
 
 .card-header h2 {
     font-size: 1.1rem;
@@ -224,11 +223,9 @@ body {
     }
 }
 
-
-
 @media screen and (min-width:992px) {
 
-    .card-body {
+    .section-details .card-body {
         min-height: 400px;
     }
 
@@ -240,10 +237,8 @@ body {
     }
 }
 
-
 @media screen and (min-width:1440px) {
-
-    .card-body {
+    section-details .card-body {
         min-height: 300px;
     }
 

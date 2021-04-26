@@ -115,8 +115,7 @@ section-details .card-body {
     color: aliceblue;
 }
 
-#footer,
-a:hover {
+#footer>a:hover {
     text-decoration: none;
     color: aliceblue
 }
@@ -223,10 +222,39 @@ a:hover {
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:320px) {
 
     .section-details .card-body {
         min-height: 400px;
+    }
+
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 30px
+    }
+}
+
+@media screen and (min-width:425px) {
+
+    .section-details .card-body {
+        min-height: 350px;
+    }
+
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 60px
+    }
+}
+
+
+@media screen and (min-width:992px) {
+
+    .section-details .card-body {
+        min-height: 375px;
     }
 
     .btn-blue {

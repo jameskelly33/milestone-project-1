@@ -185,7 +185,7 @@ section-details .card-body {
 
 /*----------------Media Queries-----------------*/
 
-@media screen and (min-width:720px) {
+@media screen and (min-width:452px) {
     .hero-img {
         height: 800px;
     }

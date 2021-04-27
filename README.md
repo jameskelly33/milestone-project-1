@@ -93,10 +93,14 @@ The site contains four pages:
 
 ## Testing
 
+### Automated Testing
+
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 * W3C Markup Validator -
 * W3C CSS Validator - 
+
+Lighthouse
 
 ## Testing User Stories from User Experience (UX) Section
     
@@ -132,14 +136,145 @@ The Website was tested on Google Chrome , Internet Explorer, Microsoft Edge and 
 
 ### Devices
 
-The website was designed on a MacBook Pro Laptop screen and was tested on the following devices
+The website was designed on a MacBook Pro Laptop using a thudnerbolt display and was tested on the following devices
 * iPhone X 
-* iPhone 8 plus
 * iPad 3
-* Samsung Glaxy
 * Iphone 5 
 
-### Tsting Procedure
+### Testing Procedure
+
+All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on a Thunderbolt Dsiplay at two different desktop screen resolutions and subsequently an Iphone X screeen, iPad 4, Samsung Galaxy and iPhone 5.
+
+
+### Elements on each page.
+
+1. Navbar
+    * Hover over each link to check hover effect is working.
+    * Click IELTS 1-1 navbar brand to check it brings user to the homepage.
+    * Click the **Home** link to check it brings user to the homepage.
+    * Click the **About** link to check it brings user to the about me page and **About** link is selected.
+    * Click the **Contact** link to check it brings user to the contact page and **Contact** link is selected.
+    * Click the **FAQ** link to check it brings user to the FAQ page **FAQ** link is selected.
+    * Click the **Download Lesson** link to check it sucessfully downloads a copy of the Free Lesson PDF.
+    * Check on mobile screen that nav bar collapses correctly into hamburger and all links work as above. 
+
+2. Footer
+    * Click the **IELTS 1-1** Logo to check it brings used back to hompage from all other pages. 
+
+### Homepage  
+
+1. Hero Image 
+    * Check Hero Image loads quickly and is displayed clearly.
+    * Check Heading a re clear and easy to read.
+    * Hover over button to check hover effect works
+    * Click download button to check it successfully donwloads the Free Lesson PDF.
+    * Check that headings are centered and the sub-heading and buttons are arranged beneath the central logo of the hero-img on mobile screens. 
+
+2. Learn More Section
+    * Check text is easy to read.
+    * Hover over blue buttons toheck if effect is working properly.
+    * Check that the 3-column layout is arranged horizontally on desktop screens.
+    * Check that the 3-column layout is arranged vertically on Tablet and Mobile screens.
+
+### About Me Page
+
+1. Profile Image
+    * Check image loads quickly and is displayed clearly.
+    * Check image is displayed on the left of the screen on desktop screens.
+    * Check image is centered , below the section heading, on tablet and mobile screens. 
+
+2. Profile text
+    * Check text is easy to read and understand.
+    * Check tex column is aligned to the right on desktop screens .
+    * Check text column is centered below the profile image on tablet and mobile screens.
+
+3. Testamonials Section
+    * Check Student' name is clear to read and is displayed before the flag icon.
+    * Check flag icon is clear and is displaying correctly.
+    * Check 3-Column column layout on desktop is horizontally alinged.
+    * Check that the 3-colum layout on tablet and mobile is displayed vertically. 
+
+
+### Contact Page
+
+1. Contact form
+
+    * Click send with all inputs empty to check required filed error appears on name.  
+    * Click name input field to check highlighting effect is working.
+    * Enter name and click send to check  that the form alerts me to enter a valid email.
+    * Click email input field to check highlighting effect is working.
+    * Enter email address without @ symbol to check that the form alerts me to enter a valid email address.
+    * Click dropdown button on nationality input to check that nationaly list appears.
+    * Hover over  nationality input to check that form asks me to select an item in list.
+    * Click dropdown button on first language input to check that languages list appears.
+    * Hover over  nationality input to check that form asks me to select an item in list.
+    * Click dropdown button on Current English Level input to check that English Level list appears.
+    * Hover over  Current English Level to check that form asks me to select an item in list.
+    * Click dropdown button on Required IELTS score input to check that Required IELTS score list appears.
+    * Hover over  Required IELTS score input to check that form asks me to select an item in list.
+    * Click each of the check boxes on and off to confirm that all can be selected and de-selected. 
+    * Send form without inputting any text inot the more inofmraiton box to check that the form alrets me that it is a required field.
+    * Send form with only required fields completed to check no required input messages appear. 
+
+
+
+### FAQ Page  
+
+1. FAQ Accordion 
+
+    * Check that the 'What is the price?' card is always selected and open when page loads.
+    * Check that the 'What is the price?' card closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'What is the price' closes when another card is selected in the accordion.
+    * Check that the 'How long is each lesson?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'How Long is each lesson' closes when another card is selected in the accordion.
+    * Check that the 'How many lessons can I book?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'How many lesson can I book?' closes when another card is selected in the accordion.
+    * Check that the 'Can I get a discount if I book more lessons?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'Can I get a discount if I book more lessons?' closes when another card is selected in the accordion.
+    * Check that the 'How will the lessons be structured?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'How will the lessons be structured?' closes when another card is selected in the accordion.
+    * Check that the 'How long will it take to reach my goal?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'How long will it take to reach my goal' closes when another card is selected in the accordion.
+    * Check that the 'What materials do I need?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'What materials do I need?' closes when another card is selected in the accordion.
+    * Check that the 'Can you just mark my writing and speaking?' card opens and closes when the title or the plus symbol is clicked . 
+    * Check that the plus symbol changes to a minus symbol and the 'Can you just mark my writing and speaking?' closes when another card is selected in the accordion.
+    
+
+
+
+
+### Bugs
+
+### Issue 
+
+1. On the homepage the subtitle was too close to the centre of the hero-imgfrom resolutions widths of 452px up to 719 px  and was being slightly obscured by the shadow on the image. 
+
+![Screenshot of subtitle placement issue]()
+
+The cause of the issue was that the media query  set up to move the subtitle below the center of the hero image was only set up for tablet resolutions and above. 
+
+![Screenshot of code]()
+
+The media query was changed to incorporate resolutions from width from 452 and above screen sizes to fix the issue.
+
+2. The IELTS 1-1 logo in the footer when hovered over would turn blue therefore making it difficult to read on the. blue background of the footer. 
+
+![Screenshot of code]()
+
+Solution was to add the following CSS code
+
+    ```
+    #footer>a:hover {
+    text-decoration: none;
+    color: aliceblue}
+    
+    ```
+
+3. 
+
+
+
 
 
 ## Deployment
@@ -163,7 +298,7 @@ The flag icons for the student testamonials were imported from this [library] (h
 
 The Plus/ Minus icons on for the Bootstrap FAQ accordion was adapted from this [codepen] (https://codepen.io/kamelagandhi/pen/WjOpVY)
 
-The footer code was adapted from this [youtube video](https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing)
+The sticky footer code was adapted from this [youtube video](https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing)
 
 
 

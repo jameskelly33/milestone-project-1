@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Online IELTS one-to-one tution. Available at a cheap price that will help you achieve your IELTS band 6,7,8 goals in writing, speaking listenign and reading.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,16 +49,18 @@
         <div id="main" class="row">
             <div class="col">
                 <h1 class="text-center section-heading">Complete the form to book a free consultation</h1>
-                <p class="text-center text-muted"><i class="bi bi-asterisk text-danger" role='img' aria-label="required"'> indicates a required field</i></p>
+                <p class="text-center text-muted"><i class="bi bi-asterisk text-danger" role='img'
+                        aria-label="required"> indicates a required field</i></p>
                 <form>
                     <div class="form-group">
-                        <label for="name">Name <i class="bi bi-asterisk text-danger" role=' img' aria-label="required"'></i></label>
+                        <label for="name">Name <i class="bi bi-asterisk text-danger" role=' img'
+                                aria-label="required"></i></label>
                         <input type="text" class="form-control" id="name" aria-describedby="name"
                             placeholder="Enter name" required></div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address <i class="bi bi-asterisk text-danger" role=' img'
-                        aria-label="required"'></i></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="email">Email address <i class="bi bi-asterisk text-danger" role='img'
+                                aria-label="required"></i></label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email"
                             placeholder="Enter email" required></div>
                     <div class="form-group">
                         <label for="nationality">Nationality</label>
@@ -257,9 +261,9 @@
                         </select></div>
                     <div class="form-group">
                         <label for="language">First Language</label>
-                        <select class="form-control" id="first-language"">
+                        <select class="form-control" id="language">
                             <option value="">Choose your first language</option>
-                            <option value="Afrikaans">Afrikaans</option>
+                            <option value=" Afrikaans">Afrikaans</option>
                             <option value="Albanian">Albanian</option>
                             <option value="Arabic">Arabic</option>
                             <option value="Armenian">Armenian</option>
@@ -334,9 +338,8 @@
 
                         </select></div>
                     <div class="form-group">
-                        <label for="level">Current English Level <i class="bi bi-asterisk text-danger" role=' img'
-                        aria-label="required"'></i></label>
-                        <select class="form-control" id="level" required>
+                        <label for="level">Current English Level</label>
+                        <select class="form-control" id="level">
                             <option value="" disabled selected>Chose your current English Level</option>
                             <option value="a1">A1 (Elementary)</option>
                             <option value="a1">A2 (Beginner)</option>
@@ -347,9 +350,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="score">Required IELTS Score <i class="bi bi-asterisk text-danger" role=' img'
-                        aria-label="required"'></i></label>
-                        <select class="form-control" id="score" required>
+                        <label for="score">Required IELTS Score </label>
+                        <select class="form-control" id="score">
                             <option selected>Choose required score in IELTS</option>
                             <option value="a1">5.5 or lower</option>
                             <option value="a1">6</option>
@@ -360,7 +362,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="skils">Which IELTS skills do you need to improve (Check all that apply)</label>
+                        <label>Which IELTS skills do you need to improve (Check all that apply)</label>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="listening">
                             <label class="form-check-label" for="listening">
@@ -394,12 +396,13 @@
 
                     </div>
                     <div class="form-group">
-                        <label for="more-info">More information <i class="bi bi-asterisk text-danger" role=' img'
-                        aria-label="required"'></i></label>
+                        <label for="more-info">More information <i class="bi bi-asterisk text-danger" role='img'
+                                aria-label="required"></i></label>
                         <textarea class="form-control" id="more-info" rows="5" required
                             placeholder="Tell me a little bit about you and your IELTS goals."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send</button>
+                </form>
 
             </div>
         </div>

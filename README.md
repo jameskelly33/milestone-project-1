@@ -1,6 +1,12 @@
 
 # **IELTS 1-1 Website**
 
+![A mock-up of the website on different devices](assets/images/screenshots/site-mock-up.png "Mock Up of the site")
+
+
+
+
+
 
 ## **Project Goals**
 
@@ -32,7 +38,7 @@ This site will meet these goals because
 
 ## **Wireframes**
 
-[Wireframes]()
+[Wireframes](assets/wireframes.bmpr)
 
 
 ### **User Story**
@@ -91,18 +97,34 @@ The site contains four pages:
     * This library was used to import Flag icons next to student's testamonials.
 
 
-## Testing
+## **Testing**
 
-### Automated Testing
+### **Automated Testing**
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 * [W3C Markup Validator] (https://validator.w3.org/) 
-* [W3C CSS Validator] 
+* [W3C CSS Validator] (https://jigsaw.w3.org/css-validator/)
 
-Lighthouse
 
-## Testing User Stories from User Experience (UX) Section
+
+### Lighthouse score
+
+The lighthouse score in google chrome developer tools was used on each page. Results were imoproved for SEO by adding a meta tag in hte head decribing the website's content and by compressing the hero and profile images. 
+
+
+
+[Homepage](assets/images/screenshots/lighthouse-report-homepage.png)
+
+[About Me ](assets/images/screenshots/lighthouse-report-aboutme.png)
+
+[Contact ](assets/images/screenshots/lighthouse-report-contact.png)
+
+[FAQ ](assets/images/screenshots/lighthouse-report-faq.png)
+
+
+
+## **Testing User Stories from User Experience (UX) Section**
     
 
  As a first-time user of the site who is considering 1-to-1 IELTS online tuition, I want:
@@ -130,23 +152,23 @@ Lighthouse
     * In the FAQ page there is also a link to the tutors email address from which the suer can ask any questions not answered in the FAQ section.  
 
 
-### Browser Compatibilty 
+### **Browser Compatibilty**
 
 The Website was tested on Google Chrome , Internet Explorer, Microsoft Edge and Safari browsers.
 
-### Devices
+### **Devices**
 
 The website was designed on a MacBook Pro Laptop using a thudnerbolt display and was tested on the following devices
 * iPhone X 
 * iPad 3
-* Iphone 5 
+* Iphone 6 
 
-### Testing Procedure
+### **Manual Testing Procedure**
 
-All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on a Thunderbolt Dsiplay at two different desktop screen resolutions and subsequently an Iphone X screeen, iPad 4, Samsung Galaxy and iPhone 5.
+All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on a Thunderbolt Dsiplay at two different desktop screen resolutions and subsequently an Iphone X screeen, iPad 4, and iPhone 6.
 
 
-### Elements on each page.
+### **Elements on each page.**
 
 1. Navbar
     * Hover over each link to check hover effect is working.
@@ -161,7 +183,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
 2. Footer
     * Click the **IELTS 1-1** Logo to check it brings used back to hompage from all other pages. 
 
-### Homepage  
+### **Homepage**
 
 1. Hero Image 
     * Check Hero Image loads quickly and is displayed clearly.
@@ -172,11 +194,11 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
 
 2. Learn More Section
     * Check text is easy to read.
-    * Hover over blue buttons toheck if effect is working properly.
+    * Hover over blue buttons to check if effect is working properly.
     * Check that the 3-column layout is arranged horizontally on desktop screens.
     * Check that the 3-column layout is arranged vertically on Tablet and Mobile screens.
 
-### About Me Page
+### **About Me Page**
 
 1. Profile Image
     * Check image loads quickly and is displayed clearly.
@@ -195,7 +217,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
     * Check that the 3-colum layout on tablet and mobile is displayed vertically. 
 
 
-### Contact Page
+### **Contact Page**
 
 1. Contact form
 
@@ -218,7 +240,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
 
 
 
-### FAQ Page  
+### **FAQ Page**
 
 1. FAQ Accordion 
 
@@ -244,37 +266,66 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
 
 
 
-### Bugs
+### **Bugs**
 
-### Issue 
+### Solved Issues 
 
-1. On the homepage the subtitle was too close to the centre of the hero-imgfrom resolutions widths of 452px up to 719 px  and was being slightly obscured by the shadow on the image. 
+1. On the homepage the sub-heading was too close to the centre of the hero-imgfrom resolutions widths of 452px up to 719 px  and was being slightly obscured by the shadow on the image. 
 
-![Screenshot of subtitle placement issue]()
+![Screenshot of subtitle placement issue](assets/images/screenshots/screenshot-subtitle-issue.png)
 
-The cause of the issue was that the media query  set up to move the subtitle below the center of the hero image was only set up for tablet resolutions and above. 
+The cause of the issue was that the media query  set up to move the subheading below the center of the hero image was only set up for tablet resolutions and above. 
 
-![Screenshot of code]()
+![Screenshot of issue]()
 
 The media query was changed to incorporate resolutions from width from 452 and above screen sizes to fix the issue.
 
-2. The IELTS 1-1 logo in the footer when hovered over would turn blue therefore making it difficult to read on the. blue background of the footer. 
 
-![Screenshot of code]()
 
-Solution was to add the following CSS code
+2. The IELTS 1-1 logo in the footer when hovered over would turn blue therefore making it difficult to read on the. blue background of the footer. The issue being that even though text-decoration was set to none, the colour was still set to the default blue for links. 
+
+![Screenshot of issue](assets/images/screenshots/screenshot-footer-hover-issue.png)
+
+The solution was to target the footer id and the hover pseudo class and add the following CSS code
 
     ```
     #footer>a:hover {
     text-decoration: none;
     color: aliceblue}
-    
     ```
 
-3. 
+
+3.  The most significant issue related to the buttons in the learn more section on the homepage. Early on I ran into the problem that because the text above the buttons was of differeing length, the horizontal alingment of the buttons would not match due to the content above it.
+    The first step I took to solve this issue was instead of using a simple botostrap 3-column layout, I utlised the bootsrap card-deck component to help with the resonsiveness. Hwoever the issue was still apparent.
+
+![Screenshot of issue](assets/images/screenshots/screenshot-button-issue.png)
+
+The issue was finally solved with the help of the codeinstitute tutor support and the use of a min-height for each card body and positioning the buttons absolutley at the bottom of each card body. 
+ 
+
+``` .btn-blue {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+```
 
 
+Then media queries were used to ensure that at each breakpoint in which the cards where hortizontally aligned there was enough space for the buttons to remain hroizontally aligned and not overlap with the text above them.  
+```
+@media screen and (min-width:1440px) {
+    section-details .card-body {
+        min-height: 300px;
+    }
 
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 100px
+    }
+}
+```
 
 
 ## Deployment
@@ -286,9 +337,9 @@ Solution was to add the following CSS code
 ### Code
 
 
-[Bootstrap4]()  grid system a was used to make the site responsive and the class library was used for componenents and styling. 
+[Bootstrap4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for componenents and styling. 
 
-The dropdown list of nationalities in the contact form came from this [github gist] ()
+The dropdown list of nationalities in the contact form came from this [github gist post](https://gist.github.com/didats/8154290)
 
 The dropdown list of languages in the contact form came from this [stack overflow post](https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form)
 

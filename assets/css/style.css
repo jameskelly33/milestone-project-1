@@ -15,7 +15,7 @@ body {
     padding-bottom: 100px;
 }
 
-/*-----------------Nav Bar--------------------*/
+/*-----------------------Nav Bar-----------------------------*/
 .navbar-brand {
     letter-spacing: 4px;
     font-size: 32px;
@@ -65,7 +65,7 @@ body {
     margin-bottom: 25px;
 }
 
-/*--------------Homepage Learn More section-------------------------*/
+/*--------------Homepage Section Details-------------------------*/
 
 .bottom-section {
     margin-bottom: 60px;
@@ -81,10 +81,7 @@ section-details .card-body {
 
 .section-details {
     height: 400px;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-bottom: 10px;
+    margin: 30px 30px 10px 30px
 }
 
 .btn-blue {
@@ -94,7 +91,7 @@ section-details .card-body {
 }
 
 
-/*----------------Footer-----------------*/
+/*---------------------------Sticky Footer--------------------------------*/
 
 #footer {
     background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
@@ -123,35 +120,37 @@ section-details .card-body {
     color: aliceblue
 }
 
-/*----------------About Me Main Section-----------------*/
+/*----------------------About Me Page--------------------------*/
 
 .section-heading {
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .profile-img {
     margin-bottom: 30px;
-
 }
 
 .profile-txt {
     margin-bottom: 30px;
-    font-size: 20px;
+    max-width: 100%;
 }
+
 
 .testamonials {
     margin-bottom: 80px;
 }
 
-/*----------------Contact Page-----------------*/
+
+/*-------------------------Contact Page----------------------------*/
 .contact-form {
     min-height: 100%;
     margin-bottom: 60px;
 }
 
 
-/*----------------FAQ Page-----------------*/
+/*----------------------------FAQ Page----------------------------*/
 
 .faq {
     margin-bottom: 60px;
@@ -172,6 +171,8 @@ section-details .card-body {
     font-size: 1.5rem;
 }
 
+/*-----Plus /minus sings on accordion------*/
+
 .card-heading>a:before {
     float: right !important;
     content: "-";
@@ -189,8 +190,10 @@ section-details .card-body {
     text-decoration: none;
 }
 
-/*----------------Media Queries-----------------*/
+/*----------------------------Media Queries------------------------------*/
 
+
+/*----Hero Image and cover text-------*/
 @media screen and (min-width:452px) {
     .hero-img {
         height: 800px;
@@ -225,6 +228,9 @@ section-details .card-body {
         left: 65px;
     }
 }
+
+
+/*-----------Section Details Card Body Height and button position---------*/
 
 @media screen and (min-width:320px) {
 
@@ -283,10 +289,19 @@ section-details .card-body {
     }
 }
 
-@media screen and (min-width:1440px) {
+/*---------Section Details headings and text----------*/
 
-    .profile-txt {
-        font-size: 30px;
+@media screen and (min-width:450px) {
+
+    .section-details p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:520px) {
+
+    .section-details p {
+        font-size: 1.3rem;
     }
 }
 
@@ -296,8 +311,9 @@ section-details .card-body {
         font-size: 1.5rem;
     }
 
-
-
+    .section-details p {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -305,18 +321,46 @@ section-details .card-body {
     .card-header h2 {
         font-size: 1.7rem;
     }
+
+    .section-details p {
+        font-size: 1rem;
+    }
 }
 
-@media screen and (min-width:450px) {
-
+@media screen and (min-width:1200px) {
     .section-details p {
         font-size: 1.2rem;
     }
 }
 
-@media screen and (min-width:1440px) {
+/*---------About me page profile text------------*/
 
-    .section-details p {
-        font-size: 1.2rem;
+@media screen and (min-width:1200px) {
+    .profile-txt {
+        font-size: 1.3rem;
+    }
+
+    .testamonials p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .profile-txt {
+        font-size: 1.5rem;
+    }
+
+    .testamonials p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .profile-txt {
+        font-size: 2rem;
+    }
+
+    .testamonials p {
+        font-size: 2rem;
     }
 }

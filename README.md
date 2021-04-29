@@ -327,7 +327,25 @@ Then media queries were used to ensure that at each breakpoint in which the card
 }
 ```
 
+4. One bug noted during the testing period was that the contents of the about me page were not taking up 100% of the width of the viewport meaning that on mobile and desktop there was always a small empty space to the right of all of the containers. When scrolling on mobile this became particularly notable. This bug was not present on any of the other pages. 
 
+![screenshot of issue](assets/images/screenshots/about-page-container-issue.png)
+
+The issue was solved by going through each element on the page in chrome developer tools and locating which element was causing the overspill. As the screenshot above shows, the element causing the issue was the row above the three columns for the student testamonials.
+
+To solve the issue I separated the section heading and the three columns into their own containers and rows as shown in the code snippet below. 
+```
+<header class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center section-heading">What my students say</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid bottom-section">
+        <div class="row">
+            <div class="col-lg testamonials">
+```
 ## Deployment
 
 

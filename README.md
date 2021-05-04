@@ -153,6 +153,9 @@ Any text that laid over the background colour was given the colour of 'Aliceblue
     * The accordion is open at the first question and answer upon the page loading.
     * Each question and answer can be open or closed by clicking on the question text of the plus/minus sign on the right hand side. 
     * The question text is in blue to maintain the colour theme of the site. 
+    * Below the accordion is a contact email address for sute-users to use if they have any other additional questions.
+
+
 **Potential Future Features**
 
 * An embedded Example video lesson and video testimonials from students.  
@@ -421,7 +424,40 @@ To solve the issue I separated the section heading and the three columns into th
         <div class="row">
             <div class="col-lg testimonials">
 ```
-## Deployment
+## **Deployment**
+
+This site was developed using Gitpod and committed and pushed to Github through the built in terminal in Gitpod. 
+
+To deploy this page to GitHub Pages the following steps should be taken.
+1. Log in to **Github**
+2. Selecte the Milestone-Project-1 repository
+3. Click on **Settings**
+4. Select the **Pages** tab on the left sidebar.
+5. In the **Source** settings click on the dropwdown menu that is currently displaying *None*.
+6. In the **Select Branch** settings change from *None* to *Master*.
+7. Click on **Save** and the link to the deployed page will appear automatically in a green box with a tick stating "Your site is published". 
+
+To run this site locally the following steps should be taken. 
+
+**Run in Gitpod**
+
+1. Download [Gitpod extension](https://www.gitpod.io/docs/browser-extension/) in chrome 
+2. Log into Gitpod
+3. Go to the Github projects and select the [milestone-project-1 repository](https://github.com/jameskelly33/milestone-project-1).
+4. There should be a green **Gitpod** button on the top right next to  the **Code** button
+5. Click the green **Gitpod** button
+6. A Gitpod workspace will load allowing the user to work locally.
+
+**Run in an alternate IDE**
+
+1. Go to GitHub projects  and select the [milestone-project-1 repository](https://github.com/jameskelly33/milestone-project-1).
+2. Above the list of files click the **Code** button. 
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. In your local IDE open the terminal.
+5. Change the current working directory to the desired location.
+6. Type ```git clone```, and then paste the URL you copied in Step 3.
+7. Press Enter. Your local clone will be created.
+
 
 
 ## Credits

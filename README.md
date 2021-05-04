@@ -428,7 +428,7 @@ To solve the issue I separated the section heading and the three columns into th
 
 ### Code
 
-[Bootstrap4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for components and styling. 
+[Bootstrap4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and faq accordion components and general styling. 
 
 The dropdown list of nationalities in the contact form came from this [github gist post](https://gist.github.com/didats/8154290)
 

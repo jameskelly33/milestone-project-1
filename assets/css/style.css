@@ -10,6 +10,8 @@ body {
     font-family: 'Pt Sans', sans-serif;
 }
 
+/* Code applies to container appearing above footer to allow 100px of space for footer*/
+/* Credit - Code for sticky footer was taken from this youtube video https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing and adapted slightly for the site's needs*/
 #main {
     overflow: auto;
     padding-bottom: 100px;
@@ -84,6 +86,9 @@ section-details .card-body {
     margin: 30px 30px 10px 30px
 }
 
+
+/* Credit - Code Institue Tutor Support helped with this code an to ensure buttons are always horizontally aligned at the bottom of each card*/
+
 .btn-blue {
     position: absolute;
     left: 50%;
@@ -93,6 +98,8 @@ section-details .card-body {
 
 /*---------------------------Sticky Footer--------------------------------*/
 
+
+/* Credit - Code for sticky footer was taken from this youtube video https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing and adapted slightly for the site's needs*/
 #footer {
     background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
     position: relative;
@@ -114,6 +121,8 @@ section-details .card-body {
     padding: 5px;
     color: aliceblue;
 }
+
+/* Change the colour from the defailt blue to aliceblue in order to stand out against the blue background of footer*/
 
 #footer>a:hover {
     text-decoration: none;
@@ -138,7 +147,7 @@ section-details .card-body {
 }
 
 
-.testamonials {
+.testimonials {
     margin-bottom: 80px;
 }
 
@@ -171,7 +180,9 @@ section-details .card-body {
     font-size: 1.5rem;
 }
 
-/*-----Plus /minus sings on accordion------*/
+/*-----Plus /minus signs on accordion------*/
+
+/* Credit - code  for plus/ minus signs on adapted from this codepen https://codepen.io/kamelagandhi/pen/WjOpVY */
 
 .card-heading>a:before {
     float: right !important;
@@ -194,6 +205,8 @@ section-details .card-body {
 
 
 /*----Hero Image and cover text-------*/
+
+
 @media screen and (min-width:452px) {
     .hero-img {
         height: 800px;
@@ -209,6 +222,8 @@ section-details .card-body {
         margin-top: 300px;
     }
 }
+
+/* Left-align text and buttons on large screens*/
 
 @media screen and (min-width:1024px) {
     .cover-heading {
@@ -230,7 +245,7 @@ section-details .card-body {
 }
 
 
-/*-----------Section Details Card Body Height and button position---------*/
+/*-----------Section Details Card Body Height and Button Position---------*/
 
 @media screen and (min-width:320px) {
 
@@ -333,14 +348,14 @@ section-details .card-body {
     }
 }
 
-/*---------About me page profile text------------*/
+/*---------About me page profile text font size------------*/
 
 @media screen and (min-width:1200px) {
     .profile-txt {
         font-size: 1.3rem;
     }
 
-    .testamonials p {
+    .testimonials p {
         font-size: 1.3rem;
     }
 }
@@ -350,7 +365,7 @@ section-details .card-body {
         font-size: 1.5rem;
     }
 
-    .testamonials p {
+    .testimonials p {
         font-size: 1.5rem;
     }
 }
@@ -360,7 +375,7 @@ section-details .card-body {
         font-size: 2rem;
     }
 
-    .testamonials p {
+    .testimonials p {
         font-size: 2rem;
     }
 }

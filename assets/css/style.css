@@ -7,15 +7,21 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     font-family: 'Pt Sans', sans-serif;
 }
 
-/* Code applies to container appearing above footer to allow 100px of space for footer*/
-/* Credit - Code for sticky footer was taken from this youtube video https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing and adapted slightly for the site's needs*/
-#main {
-    overflow: auto;
-    padding-bottom: 100px;
+/* Credit - Code for sticky footer using grid system was taken from this article https://dev.to/niorad/keeping-the-footer-at-the-bottom-with-css-grid-15mf */
+.main {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
 }
+
+
+
+
 
 /*-----------------------Nav Bar-----------------------------*/
 .navbar-brand {
@@ -73,7 +79,7 @@ body {
     margin-bottom: 60px;
 }
 
-.card {
+.bottom-section .card {
     border: none;
 }
 
@@ -100,12 +106,9 @@ section-details .card-body {
 
 
 /* Credit - Code for sticky footer was taken from this youtube video https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing and adapted slightly for the site's needs*/
-#footer {
-    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
+.footer {
+    background-image: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
+
 }
 
 .footer-logo {
@@ -124,7 +127,7 @@ section-details .card-body {
 
 /* Change the colour from the defailt blue to aliceblue in order to stand out against the blue background of footer*/
 
-#footer>a:hover {
+.footer>a:hover {
     text-decoration: none;
     color: aliceblue
 }
@@ -160,19 +163,16 @@ section-details .card-body {
 
 
 /*----------------------------FAQ Page----------------------------*/
-
-.faq {
-    margin-bottom: 60px;
-    min-height: 100%;
-}
-
-
 .section-heading {
     padding: 20px;
 }
 
+.card-header {
+    background-color: rgba(50, 116, 166, 1)
+}
 
-.card-header h2 {
+.card-heading a {
+    color: aliceblue;
     font-size: 1.1rem;
 }
 
@@ -180,12 +180,14 @@ section-details .card-body {
     font-size: 1.5rem;
 }
 
+
 /*-----Plus /minus signs on accordion------*/
 
 /* Credit - code  for plus/ minus signs on adapted from this codepen https://codepen.io/kamelagandhi/pen/WjOpVY */
 
 .card-heading>a:before {
     float: right !important;
+
     content: "-";
     padding-right: 5px;
 }
@@ -322,7 +324,7 @@ section-details .card-body {
 
 @media screen and (min-width:720px) {
 
-    .card-header h2 {
+    .card-header h2 a {
         font-size: 1.5rem;
     }
 
@@ -333,7 +335,7 @@ section-details .card-body {
 
 @media screen and (min-width:992px) {
 
-    .card-header h2 {
+    .card-header h2 a {
         font-size: 1.7rem;
     }
 

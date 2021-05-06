@@ -76,7 +76,7 @@ Any text that laid over the background colour was given the colour of 'Aliceblue
 
 * **Navbar**
     * The navigation bar has the name IELTS 1-1 in the top-left corner and when clicked will bring you to the homepage.
-    * In the top-right corner are the four list-items 
+    * In the top-right corner are the five list-items 
         * Home
         * About me
         * Contact
@@ -226,11 +226,11 @@ To run this site locally the following steps should be taken.
 
 
 
-## Credits
+## **Credits**
 
 ### Code
 
-[Bootstrap4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and faq accordion components and general styling. 
+[Bootstrap 4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and faq accordion components and general styling. 
 
 The dropdown list of nationalities in the contact form came from this [github gist post](https://gist.github.com/didats/8154290)
 
@@ -246,17 +246,18 @@ The sticky footer code was adapted from this [youtube video](https://www.youtube
 
 
 
-### Content
+### **Content**
 
 All of the site content was written by the developer- with the exception of the student testimonials - see acknowledgements below. 
 The PDF download file was authored by the developer. 
 
-### Media
+### **Media**
 
 The hero image was licensed from [Adobe Stock Images](https://stock.adobe.com/ie/images/ielts-international-standardised-test-of-english-language/320133606?prev_url=detail). 
+
 The profile image is the developer's own. 
 
-### Acknowledgements 
+### **Acknowledgements**
 
 My CodeInsitute mentor, Antonija Simic, for her thorough and constructive feedback.
 

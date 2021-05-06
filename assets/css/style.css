@@ -355,7 +355,7 @@ section-details .card-body {
         font-size: 1.3rem;
     }
 
-    .testimonials p {
+    .blockquote {
         font-size: 1.3rem;
     }
 }
@@ -365,7 +365,7 @@ section-details .card-body {
         font-size: 1.5rem;
     }
 
-    .testimonials p {
+    .blockquote {
         font-size: 1.5rem;
     }
 }
@@ -375,7 +375,7 @@ section-details .card-body {
         font-size: 2rem;
     }
 
-    .testimonials p {
+    .blockquote {
         font-size: 2rem;
     }
 }

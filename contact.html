@@ -8,7 +8,7 @@
         content="Online IELTS one-to-one tution. Available at a cheap price that will help you achieve your IELTS band 6,7,8 goals in writing, speaking listenign and reading.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -17,405 +17,407 @@
 </head>
 
 <body>
-    <!--Code adapted from bootstrap example collapsing navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            IELTS 1-1</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="assets/essay-writing-lesson.pdf">Download Lesson</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--Code adapted from bootstrap example form control-->
-    <section class="container contact-form">
-        <div id="main" class="row">
-            <div class="col ">
-                <h1 class="text-center section-heading">Complete the form to book a free consultation</h1>
-                <p class="text-center text-muted"><i class="bi bi-asterisk text-danger" role='img'
-                        aria-label="required"> indicates a required field</i></p>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name <i class="bi bi-asterisk text-danger" role=' img'
-                                aria-label="required"></i></label>
-                        <input type="text" class="form-control" id="name" aria-describedby="name"
-                            placeholder="Enter name" required></div>
-                    <div class="form-group">
-                        <label for="email">Email address <i class="bi bi-asterisk text-danger" role='img'
-                                aria-label="required"></i></label>
-                        <input type="email" class="form-control" id="email" aria-describedby="email"
-                            placeholder="Enter email" required></div>
-                    <div class="form-group">
-                        <!--Nationality dropdown list taken from this github post https://gist.github.com/didats/8154290-->
-                        <label for="nationality">Nationality</label>
-                        <select class="form-control" id="nationality">
-                            <option value="" disabled selected hidden>Choose your nationality</option>
-                            <option value="afghan">Afghan</option>
-                            <option value="albanian">Albanian</option>
-                            <option value="algerian">Algerian</option>
-                            <option value="american">American</option>
-                            <option value="andorran">Andorran</option>
-                            <option value="angolan">Angolan</option>
-                            <option value="antiguans">Antiguans</option>
-                            <option value="argentinean">Argentinean</option>
-                            <option value="armenian">Armenian</option>
-                            <option value="australian">Australian</option>
-                            <option value="austrian">Austrian</option>
-                            <option value="azerbaijani">Azerbaijani</option>
-                            <option value="bahamian">Bahamian</option>
-                            <option value="bahraini">Bahraini</option>
-                            <option value="bangladeshi">Bangladeshi</option>
-                            <option value="barbadian">Barbadian</option>
-                            <option value="barbudans">Barbudans</option>
-                            <option value="batswana">Batswana</option>
-                            <option value="belarusian">Belarusian</option>
-                            <option value="belgian">Belgian</option>
-                            <option value="belizean">Belizean</option>
-                            <option value="beninese">Beninese</option>
-                            <option value="bhutanese">Bhutanese</option>
-                            <option value="bolivian">Bolivian</option>
-                            <option value="bosnian">Bosnian</option>
-                            <option value="brazilian">Brazilian</option>
-                            <option value="british">British</option>
-                            <option value="bruneian">Bruneian</option>
-                            <option value="bulgarian">Bulgarian</option>
-                            <option value="burkinabe">Burkinabe</option>
-                            <option value="burmese">Burmese</option>
-                            <option value="burundian">Burundian</option>
-                            <option value="cambodian">Cambodian</option>
-                            <option value="cameroonian">Cameroonian</option>
-                            <option value="canadian">Canadian</option>
-                            <option value="cape verdean">Cape Verdean</option>
-                            <option value="central african">Central African</option>
-                            <option value="chadian">Chadian</option>
-                            <option value="chilean">Chilean</option>
-                            <option value="chinese">Chinese</option>
-                            <option value="colombian">Colombian</option>
-                            <option value="comoran">Comoran</option>
-                            <option value="congolese">Congolese</option>
-                            <option value="costa rican">Costa Rican</option>
-                            <option value="croatian">Croatian</option>
-                            <option value="cuban">Cuban</option>
-                            <option value="cypriot">Cypriot</option>
-                            <option value="czech">Czech</option>
-                            <option value="danish">Danish</option>
-                            <option value="djibouti">Djibouti</option>
-                            <option value="dominican">Dominican</option>
-                            <option value="dutch">Dutch</option>
-                            <option value="east timorese">East Timorese</option>
-                            <option value="ecuadorean">Ecuadorean</option>
-                            <option value="egyptian">Egyptian</option>
-                            <option value="emirian">Emirian</option>
-                            <option value="equatorial guinean">Equatorial Guinean</option>
-                            <option value="eritrean">Eritrean</option>
-                            <option value="estonian">Estonian</option>
-                            <option value="ethiopian">Ethiopian</option>
-                            <option value="fijian">Fijian</option>
-                            <option value="filipino">Filipino</option>
-                            <option value="finnish">Finnish</option>
-                            <option value="french">French</option>
-                            <option value="gabonese">Gabonese</option>
-                            <option value="gambian">Gambian</option>
-                            <option value="georgian">Georgian</option>
-                            <option value="german">German</option>
-                            <option value="ghanaian">Ghanaian</option>
-                            <option value="greek">Greek</option>
-                            <option value="grenadian">Grenadian</option>
-                            <option value="guatemalan">Guatemalan</option>
-                            <option value="guinea-bissauan">Guinea-Bissauan</option>
-                            <option value="guinean">Guinean</option>
-                            <option value="guyanese">Guyanese</option>
-                            <option value="haitian">Haitian</option>
-                            <option value="herzegovinian">Herzegovinian</option>
-                            <option value="honduran">Honduran</option>
-                            <option value="hungarian">Hungarian</option>
-                            <option value="icelander">Icelander</option>
-                            <option value="indian">Indian</option>
-                            <option value="indonesian">Indonesian</option>
-                            <option value="iranian">Iranian</option>
-                            <option value="iraqi">Iraqi</option>
-                            <option value="irish">Irish</option>
-                            <option value="israeli">Israeli</option>
-                            <option value="italian">Italian</option>
-                            <option value="ivorian">Ivorian</option>
-                            <option value="jamaican">Jamaican</option>
-                            <option value="japanese">Japanese</option>
-                            <option value="jordanian">Jordanian</option>
-                            <option value="kazakhstani">Kazakhstani</option>
-                            <option value="kenyan">Kenyan</option>
-                            <option value="kittian and nevisian">Kittian and Nevisian</option>
-                            <option value="kuwaiti">Kuwaiti</option>
-                            <option value="kyrgyz">Kyrgyz</option>
-                            <option value="laotian">Laotian</option>
-                            <option value="latvian">Latvian</option>
-                            <option value="lebanese">Lebanese</option>
-                            <option value="liberian">Liberian</option>
-                            <option value="libyan">Libyan</option>
-                            <option value="liechtensteiner">Liechtensteiner</option>
-                            <option value="lithuanian">Lithuanian</option>
-                            <option value="luxembourger">Luxembourger</option>
-                            <option value="macedonian">Macedonian</option>
-                            <option value="malagasy">Malagasy</option>
-                            <option value="malawian">Malawian</option>
-                            <option value="malaysian">Malaysian</option>
-                            <option value="maldivan">Maldivan</option>
-                            <option value="malian">Malian</option>
-                            <option value="maltese">Maltese</option>
-                            <option value="marshallese">Marshallese</option>
-                            <option value="mauritanian">Mauritanian</option>
-                            <option value="mauritian">Mauritian</option>
-                            <option value="mexican">Mexican</option>
-                            <option value="micronesian">Micronesian</option>
-                            <option value="moldovan">Moldovan</option>
-                            <option value="monacan">Monacan</option>
-                            <option value="mongolian">Mongolian</option>
-                            <option value="moroccan">Moroccan</option>
-                            <option value="mosotho">Mosotho</option>
-                            <option value="motswana">Motswana</option>
-                            <option value="mozambican">Mozambican</option>
-                            <option value="namibian">Namibian</option>
-                            <option value="nauruan">Nauruan</option>
-                            <option value="nepalese">Nepalese</option>
-                            <option value="new zealander">New Zealander</option>
-                            <option value="ni-vanuatu">Ni-Vanuatu</option>
-                            <option value="nicaraguan">Nicaraguan</option>
-                            <option value="nigerien">Nigerien</option>
-                            <option value="north korean">North Korean</option>
-                            <option value="northern irish">Northern Irish</option>
-                            <option value="norwegian">Norwegian</option>
-                            <option value="omani">Omani</option>
-                            <option value="pakistani">Pakistani</option>
-                            <option value="palauan">Palauan</option>
-                            <option value="panamanian">Panamanian</option>
-                            <option value="papua new guinean">Papua New Guinean</option>
-                            <option value="paraguayan">Paraguayan</option>
-                            <option value="peruvian">Peruvian</option>
-                            <option value="polish">Polish</option>
-                            <option value="portuguese">Portuguese</option>
-                            <option value="qatari">Qatari</option>
-                            <option value="romanian">Romanian</option>
-                            <option value="russian">Russian</option>
-                            <option value="rwandan">Rwandan</option>
-                            <option value="saint lucian">Saint Lucian</option>
-                            <option value="salvadoran">Salvadoran</option>
-                            <option value="samoan">Samoan</option>
-                            <option value="san marinese">San Marinese</option>
-                            <option value="sao tomean">Sao Tomean</option>
-                            <option value="saudi">Saudi</option>
-                            <option value="scottish">Scottish</option>
-                            <option value="senegalese">Senegalese</option>
-                            <option value="serbian">Serbian</option>
-                            <option value="seychellois">Seychellois</option>
-                            <option value="sierra leonean">Sierra Leonean</option>
-                            <option value="singaporean">Singaporean</option>
-                            <option value="slovakian">Slovakian</option>
-                            <option value="slovenian">Slovenian</option>
-                            <option value="solomon islander">Solomon Islander</option>
-                            <option value="somali">Somali</option>
-                            <option value="south african">South African</option>
-                            <option value="south korean">South Korean</option>
-                            <option value="spanish">Spanish</option>
-                            <option value="sri lankan">Sri Lankan</option>
-                            <option value="sudanese">Sudanese</option>
-                            <option value="surinamer">Surinamer</option>
-                            <option value="swazi">Swazi</option>
-                            <option value="swedish">Swedish</option>
-                            <option value="swiss">Swiss</option>
-                            <option value="syrian">Syrian</option>
-                            <option value="taiwanese">Taiwanese</option>
-                            <option value="tajik">Tajik</option>
-                            <option value="tanzanian">Tanzanian</option>
-                            <option value="thai">Thai</option>
-                            <option value="togolese">Togolese</option>
-                            <option value="tongan">Tongan</option>
-                            <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
-                            <option value="tunisian">Tunisian</option>
-                            <option value="turkish">Turkish</option>
-                            <option value="tuvaluan">Tuvaluan</option>
-                            <option value="ugandan">Ugandan</option>
-                            <option value="ukrainian">Ukrainian</option>
-                            <option value="uruguayan">Uruguayan</option>
-                            <option value="uzbekistani">Uzbekistani</option>
-                            <option value="venezuelan">Venezuelan</option>
-                            <option value="vietnamese">Vietnamese</option>
-                            <option value="welsh">Welsh</option>
-                            <option value="yemenite">Yemenite</option>
-                            <option value="zambian">Zambian</option>
-                            <option value="zimbabwean">Zimbabwean</option>
-                        </select></div>
-                    <!--Language dropdown list taken from this stack overflow post https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form-->
-                    <div class="form-group">
-                        <label for="language">First Language</label>
-                        <select class="form-control" id="language">
-                            <option value="" dsiabled selected hidden>Choose your first language</option>
-                            <option value=" Afrikaans">Afrikaans</option>
-                            <option value="Albanian">Albanian</option>
-                            <option value="Arabic">Arabic</option>
-                            <option value="Armenian">Armenian</option>
-                            <option value="Basque">Basque</option>
-                            <option value="Bengali">Bengali</option>
-                            <option value="Bulgarian">Bulgarian</option>
-                            <option value="Catalan">Catalan</option>
-                            <option value="Cambodian">Cambodian</option>
-                            <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
-                            <option value="Croatian">Croatian</option>
-                            <option value="Czech">Czech</option>
-                            <option value="Danish">Danish</option>
-                            <option value="Dutch">Dutch</option>
-                            <option value="English">English</option>
-                            <option value="Estonian">Estonian</option>
-                            <option value="Fiji">Fiji</option>
-                            <option value="Finnish">Finnish</option>
-                            <option value="French">French</option>
-                            <option value="Georgian">Georgian</option>
-                            <option value="German">German</option>
-                            <option value="Greek">Greek</option>
-                            <option value="Gujarati">Gujarati</option>
-                            <option value="Hebrew">Hebrew</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Hungarian">Hungarian</option>
-                            <option value="Icelandic">Icelandic</option>
-                            <option value="Indonesian">Indonesian</option>
-                            <option value="Irish">Irish</option>
-                            <option value="Italian">Italian</option>
-                            <option value="Japanese">Japanese</option>
-                            <option value="Javanese">Javanese</option>
-                            <option value="Korean">Korean</option>
-                            <option value="Latin">Latin</option>
-                            <option value="Latvian">Latvian</option>
-                            <option value="Lithuanian">Lithuanian</option>
-                            <option value="Macedonian">Macedonian</option>
-                            <option value="Malay">Malay</option>
-                            <option value="Malayalam">Malayalam</option>
-                            <option value="Maltese">Maltese</option>
-                            <option value="Maori">Maori</option>
-                            <option value="Marathi">Marathi</option>
-                            <option value="Mongolian">Mongolian</option>
-                            <option value="Nepali">Nepali</option>
-                            <option value="Norwegian">Norwegian</option>
-                            <option value="Persian">Persian</option>
-                            <option value="Polish">Polish</option>
-                            <option value="Portuguese">Portuguese</option>
-                            <option value="Punjabi">Punjabi</option>
-                            <option value="Quechua">Quechua</option>
-                            <option value="Romanian">Romanian</option>
-                            <option value="Russian">Russian</option>
-                            <option value="Samoan">Samoan</option>
-                            <option value="Serbian">Serbian</option>
-                            <option value="Slovak">Slovak</option>
-                            <option value="Slovenian">Slovenian</option>
-                            <option value="Spanish">Spanish</option>
-                            <option value="Swahili">Swahili</option>
-                            <option value="Swedish ">Swedish </option>
-                            <option value="Tamil">Tamil</option>
-                            <option value="Tatar">Tatar</option>
-                            <option value="Telugu">Telugu</option>
-                            <option value="Thai">Thai</option>
-                            <option value="Tibetan">Tibetan</option>
-                            <option value="Tonga">Tonga</option>
-                            <option value="Turkish">Turkish</option>
-                            <option value="Ukrainian">Ukrainian</option>
-                            <option value="Urdu">Urdu</option>
-                            <option value="Uzbek">Uzbek</option>
-                            <option value="Vietnamese">Vietnamese</option>
-                            <option value="Welsh">Welsh</option>
-                            <option value="Xhosa">Xhosa</option>
-
-                        </select></div>
-                    <div class="form-group">
-                        <label for="level">Current English Level</label>
-                        <select class="form-control" id="level">
-                            <option value="" disabled hidden selected>Chose your current English Level</option>
-                            <option value="a1">A1 (Elementary)</option>
-                            <option value="a1">A2 (Beginner)</option>
-                            <option value="a1">B1 (Intermediate)</option>
-                            <option value="a1">B2 (Upper Intermediate)</option>
-                            <option value="a1">C1 (Advanced)</option>
-                            <option value="not-sure">Not sure</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="score">Required IELTS Score </label>
-                        <select class="form-control" id="score">
-                            <option disabled hidden selected>Choose required score in IELTS</option>
-                            <option value="a1">5.5 or lower</option>
-                            <option value="a1">6</option>
-                            <option value="a1">6.5</option>
-                            <option value="a1">7</option>
-                            <option value="a1">7.5 or higher</option>
-                            <option value="not-sure">Not sure</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Which IELTS skills do you need to improve (Check all that apply)</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="listening">
-                            <label class="form-check-label" for="listening">
-                                Listening
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="reading">
-                            <label class="form-check-label" for="reading">
-                                Reading
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="writing1">
-                            <label class="form-check-label" for="writing1">
-                                Writing Task 1
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="writing2">
-                            <label class="form-check-label" for="writing2">
-                                Writing Task 2
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="speaking">
-                            <label class="form-check-label" for="speaking">
-                                Speaking
-                            </label>
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="more-info">More information <i class="bi bi-asterisk text-danger" role='img'
-                                aria-label="required"></i></label>
-                        <textarea class="form-control" id="more-info" rows="5" required
-                            placeholder="Tell me a little bit about you and your IELTS goals."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-
+    <div class="container-fluid main p-0">
+        <!--Code adapted from bootstrap example collapsing navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                IELTS 1-1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="assets/essay-writing-lesson.pdf">Download Lesson</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </nav>
+        <!--Code adapted from bootstrap example form control-->
+        <section class="container contact-form">
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <h1 class="text-center section-heading">Complete the form to book a free consultation</h1>
+                    <p class="text-center text-muted"><i class="bi bi-asterisk text-danger" role='img'
+                            aria-label="required"> indicates a required field</i></p>
+                    <form class="shadow-lg p-3 mb-5 bg-light rounded">
+                        <div class="form-group">
+                            <label for="name">Name <i class="bi bi-asterisk text-danger" role=' img'
+                                    aria-label="required"></i></label>
+                            <input type="text" class="form-control name" aria-describedby="name"
+                                placeholder="Enter name" required></div>
+                        <div class="form-group">
+                            <label for="email">Email address <i class="bi bi-asterisk text-danger" role='img'
+                                    aria-label="required"></i></label>
+                            <input type="email" class="form-control email" aria-describedby="email"
+                                placeholder="Enter email" required></div>
+                        <div class="form-group">
+                            <!--Nationality dropdown list taken from this github post https://gist.github.com/didats/8154290-->
+                            <label for="nationality">Nationality</label>
+                            <select class="form-control nationality">
+                                <option value="" disabled selected hidden>Choose your nationality</option>
+                                <option value="afghan">Afghan</option>
+                                <option value="albanian">Albanian</option>
+                                <option value="algerian">Algerian</option>
+                                <option value="american">American</option>
+                                <option value="andorran">Andorran</option>
+                                <option value="angolan">Angolan</option>
+                                <option value="antiguans">Antiguans</option>
+                                <option value="argentinean">Argentinean</option>
+                                <option value="armenian">Armenian</option>
+                                <option value="australian">Australian</option>
+                                <option value="austrian">Austrian</option>
+                                <option value="azerbaijani">Azerbaijani</option>
+                                <option value="bahamian">Bahamian</option>
+                                <option value="bahraini">Bahraini</option>
+                                <option value="bangladeshi">Bangladeshi</option>
+                                <option value="barbadian">Barbadian</option>
+                                <option value="barbudans">Barbudans</option>
+                                <option value="batswana">Batswana</option>
+                                <option value="belarusian">Belarusian</option>
+                                <option value="belgian">Belgian</option>
+                                <option value="belizean">Belizean</option>
+                                <option value="beninese">Beninese</option>
+                                <option value="bhutanese">Bhutanese</option>
+                                <option value="bolivian">Bolivian</option>
+                                <option value="bosnian">Bosnian</option>
+                                <option value="brazilian">Brazilian</option>
+                                <option value="british">British</option>
+                                <option value="bruneian">Bruneian</option>
+                                <option value="bulgarian">Bulgarian</option>
+                                <option value="burkinabe">Burkinabe</option>
+                                <option value="burmese">Burmese</option>
+                                <option value="burundian">Burundian</option>
+                                <option value="cambodian">Cambodian</option>
+                                <option value="cameroonian">Cameroonian</option>
+                                <option value="canadian">Canadian</option>
+                                <option value="cape verdean">Cape Verdean</option>
+                                <option value="central african">Central African</option>
+                                <option value="chadian">Chadian</option>
+                                <option value="chilean">Chilean</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="colombian">Colombian</option>
+                                <option value="comoran">Comoran</option>
+                                <option value="congolese">Congolese</option>
+                                <option value="costa rican">Costa Rican</option>
+                                <option value="croatian">Croatian</option>
+                                <option value="cuban">Cuban</option>
+                                <option value="cypriot">Cypriot</option>
+                                <option value="czech">Czech</option>
+                                <option value="danish">Danish</option>
+                                <option value="djibouti">Djibouti</option>
+                                <option value="dominican">Dominican</option>
+                                <option value="dutch">Dutch</option>
+                                <option value="east timorese">East Timorese</option>
+                                <option value="ecuadorean">Ecuadorean</option>
+                                <option value="egyptian">Egyptian</option>
+                                <option value="emirian">Emirian</option>
+                                <option value="equatorial guinean">Equatorial Guinean</option>
+                                <option value="eritrean">Eritrean</option>
+                                <option value="estonian">Estonian</option>
+                                <option value="ethiopian">Ethiopian</option>
+                                <option value="fijian">Fijian</option>
+                                <option value="filipino">Filipino</option>
+                                <option value="finnish">Finnish</option>
+                                <option value="french">French</option>
+                                <option value="gabonese">Gabonese</option>
+                                <option value="gambian">Gambian</option>
+                                <option value="georgian">Georgian</option>
+                                <option value="german">German</option>
+                                <option value="ghanaian">Ghanaian</option>
+                                <option value="greek">Greek</option>
+                                <option value="grenadian">Grenadian</option>
+                                <option value="guatemalan">Guatemalan</option>
+                                <option value="guinea-bissauan">Guinea-Bissauan</option>
+                                <option value="guinean">Guinean</option>
+                                <option value="guyanese">Guyanese</option>
+                                <option value="haitian">Haitian</option>
+                                <option value="herzegovinian">Herzegovinian</option>
+                                <option value="honduran">Honduran</option>
+                                <option value="hungarian">Hungarian</option>
+                                <option value="icelander">Icelander</option>
+                                <option value="indian">Indian</option>
+                                <option value="indonesian">Indonesian</option>
+                                <option value="iranian">Iranian</option>
+                                <option value="iraqi">Iraqi</option>
+                                <option value="irish">Irish</option>
+                                <option value="israeli">Israeli</option>
+                                <option value="italian">Italian</option>
+                                <option value="ivorian">Ivorian</option>
+                                <option value="jamaican">Jamaican</option>
+                                <option value="japanese">Japanese</option>
+                                <option value="jordanian">Jordanian</option>
+                                <option value="kazakhstani">Kazakhstani</option>
+                                <option value="kenyan">Kenyan</option>
+                                <option value="kittian and nevisian">Kittian and Nevisian</option>
+                                <option value="kuwaiti">Kuwaiti</option>
+                                <option value="kyrgyz">Kyrgyz</option>
+                                <option value="laotian">Laotian</option>
+                                <option value="latvian">Latvian</option>
+                                <option value="lebanese">Lebanese</option>
+                                <option value="liberian">Liberian</option>
+                                <option value="libyan">Libyan</option>
+                                <option value="liechtensteiner">Liechtensteiner</option>
+                                <option value="lithuanian">Lithuanian</option>
+                                <option value="luxembourger">Luxembourger</option>
+                                <option value="macedonian">Macedonian</option>
+                                <option value="malagasy">Malagasy</option>
+                                <option value="malawian">Malawian</option>
+                                <option value="malaysian">Malaysian</option>
+                                <option value="maldivan">Maldivan</option>
+                                <option value="malian">Malian</option>
+                                <option value="maltese">Maltese</option>
+                                <option value="marshallese">Marshallese</option>
+                                <option value="mauritanian">Mauritanian</option>
+                                <option value="mauritian">Mauritian</option>
+                                <option value="mexican">Mexican</option>
+                                <option value="micronesian">Micronesian</option>
+                                <option value="moldovan">Moldovan</option>
+                                <option value="monacan">Monacan</option>
+                                <option value="mongolian">Mongolian</option>
+                                <option value="moroccan">Moroccan</option>
+                                <option value="mosotho">Mosotho</option>
+                                <option value="motswana">Motswana</option>
+                                <option value="mozambican">Mozambican</option>
+                                <option value="namibian">Namibian</option>
+                                <option value="nauruan">Nauruan</option>
+                                <option value="nepalese">Nepalese</option>
+                                <option value="new zealander">New Zealander</option>
+                                <option value="ni-vanuatu">Ni-Vanuatu</option>
+                                <option value="nicaraguan">Nicaraguan</option>
+                                <option value="nigerien">Nigerien</option>
+                                <option value="north korean">North Korean</option>
+                                <option value="northern irish">Northern Irish</option>
+                                <option value="norwegian">Norwegian</option>
+                                <option value="omani">Omani</option>
+                                <option value="pakistani">Pakistani</option>
+                                <option value="palauan">Palauan</option>
+                                <option value="panamanian">Panamanian</option>
+                                <option value="papua new guinean">Papua New Guinean</option>
+                                <option value="paraguayan">Paraguayan</option>
+                                <option value="peruvian">Peruvian</option>
+                                <option value="polish">Polish</option>
+                                <option value="portuguese">Portuguese</option>
+                                <option value="qatari">Qatari</option>
+                                <option value="romanian">Romanian</option>
+                                <option value="russian">Russian</option>
+                                <option value="rwandan">Rwandan</option>
+                                <option value="saint lucian">Saint Lucian</option>
+                                <option value="salvadoran">Salvadoran</option>
+                                <option value="samoan">Samoan</option>
+                                <option value="san marinese">San Marinese</option>
+                                <option value="sao tomean">Sao Tomean</option>
+                                <option value="saudi">Saudi</option>
+                                <option value="scottish">Scottish</option>
+                                <option value="senegalese">Senegalese</option>
+                                <option value="serbian">Serbian</option>
+                                <option value="seychellois">Seychellois</option>
+                                <option value="sierra leonean">Sierra Leonean</option>
+                                <option value="singaporean">Singaporean</option>
+                                <option value="slovakian">Slovakian</option>
+                                <option value="slovenian">Slovenian</option>
+                                <option value="solomon islander">Solomon Islander</option>
+                                <option value="somali">Somali</option>
+                                <option value="south african">South African</option>
+                                <option value="south korean">South Korean</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="sri lankan">Sri Lankan</option>
+                                <option value="sudanese">Sudanese</option>
+                                <option value="surinamer">Surinamer</option>
+                                <option value="swazi">Swazi</option>
+                                <option value="swedish">Swedish</option>
+                                <option value="swiss">Swiss</option>
+                                <option value="syrian">Syrian</option>
+                                <option value="taiwanese">Taiwanese</option>
+                                <option value="tajik">Tajik</option>
+                                <option value="tanzanian">Tanzanian</option>
+                                <option value="thai">Thai</option>
+                                <option value="togolese">Togolese</option>
+                                <option value="tongan">Tongan</option>
+                                <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                                <option value="tunisian">Tunisian</option>
+                                <option value="turkish">Turkish</option>
+                                <option value="tuvaluan">Tuvaluan</option>
+                                <option value="ugandan">Ugandan</option>
+                                <option value="ukrainian">Ukrainian</option>
+                                <option value="uruguayan">Uruguayan</option>
+                                <option value="uzbekistani">Uzbekistani</option>
+                                <option value="venezuelan">Venezuelan</option>
+                                <option value="vietnamese">Vietnamese</option>
+                                <option value="welsh">Welsh</option>
+                                <option value="yemenite">Yemenite</option>
+                                <option value="zambian">Zambian</option>
+                                <option value="zimbabwean">Zimbabwean</option>
+                            </select></div>
+                        <!--Language dropdown list taken from this stack overflow post https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form-->
+                        <div class="form-group">
+                            <label for="language">First Language</label>
+                            <select class="form-control language">
+                                <option value="" dsiabled selected hidden>Choose your first language</option>
+                                <option value=" Afrikaans">Afrikaans</option>
+                                <option value="Albanian">Albanian</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Armenian">Armenian</option>
+                                <option value="Basque">Basque</option>
+                                <option value="Bengali">Bengali</option>
+                                <option value="Bulgarian">Bulgarian</option>
+                                <option value="Catalan">Catalan</option>
+                                <option value="Cambodian">Cambodian</option>
+                                <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+                                <option value="Croatian">Croatian</option>
+                                <option value="Czech">Czech</option>
+                                <option value="Danish">Danish</option>
+                                <option value="Dutch">Dutch</option>
+                                <option value="English">English</option>
+                                <option value="Estonian">Estonian</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finnish">Finnish</option>
+                                <option value="French">French</option>
+                                <option value="Georgian">Georgian</option>
+                                <option value="German">German</option>
+                                <option value="Greek">Greek</option>
+                                <option value="Gujarati">Gujarati</option>
+                                <option value="Hebrew">Hebrew</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Hungarian">Hungarian</option>
+                                <option value="Icelandic">Icelandic</option>
+                                <option value="Indonesian">Indonesian</option>
+                                <option value="Irish">Irish</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Javanese">Javanese</option>
+                                <option value="Korean">Korean</option>
+                                <option value="Latin">Latin</option>
+                                <option value="Latvian">Latvian</option>
+                                <option value="Lithuanian">Lithuanian</option>
+                                <option value="Macedonian">Macedonian</option>
+                                <option value="Malay">Malay</option>
+                                <option value="Malayalam">Malayalam</option>
+                                <option value="Maltese">Maltese</option>
+                                <option value="Maori">Maori</option>
+                                <option value="Marathi">Marathi</option>
+                                <option value="Mongolian">Mongolian</option>
+                                <option value="Nepali">Nepali</option>
+                                <option value="Norwegian">Norwegian</option>
+                                <option value="Persian">Persian</option>
+                                <option value="Polish">Polish</option>
+                                <option value="Portuguese">Portuguese</option>
+                                <option value="Punjabi">Punjabi</option>
+                                <option value="Quechua">Quechua</option>
+                                <option value="Romanian">Romanian</option>
+                                <option value="Russian">Russian</option>
+                                <option value="Samoan">Samoan</option>
+                                <option value="Serbian">Serbian</option>
+                                <option value="Slovak">Slovak</option>
+                                <option value="Slovenian">Slovenian</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Swahili">Swahili</option>
+                                <option value="Swedish ">Swedish </option>
+                                <option value="Tamil">Tamil</option>
+                                <option value="Tatar">Tatar</option>
+                                <option value="Telugu">Telugu</option>
+                                <option value="Thai">Thai</option>
+                                <option value="Tibetan">Tibetan</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Turkish">Turkish</option>
+                                <option value="Ukrainian">Ukrainian</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Uzbek">Uzbek</option>
+                                <option value="Vietnamese">Vietnamese</option>
+                                <option value="Welsh">Welsh</option>
+                                <option value="Xhosa">Xhosa</option>
 
-    <footer id="footer" class="text-center">
-        <a class="footer-logo" href="index.html">IELTS 1-1</a>
-        <p class="footer-text">&copy;Copyright James Kelly 2021</p>
+                            </select></div>
+                        <div class="form-group">
+                            <label for="level">Current English Level</label>
+                            <select class="form-control level">
+                                <option value="" disabled hidden selected>Chose your current English Level</option>
+                                <option value="a1">A1 (Elementary)</option>
+                                <option value="a1">A2 (Beginner)</option>
+                                <option value="a1">B1 (Intermediate)</option>
+                                <option value="a1">B2 (Upper Intermediate)</option>
+                                <option value="a1">C1 (Advanced)</option>
+                                <option value="not-sure">Not sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="score">Required IELTS Score </label>
+                            <select class="form-control score">
+                                <option disabled hidden selected>Choose required score in IELTS</option>
+                                <option value="a1">5.5 or lower</option>
+                                <option value="a1">6</option>
+                                <option value="a1">6.5</option>
+                                <option value="a1">7</option>
+                                <option value="a1">7.5 or higher</option>
+                                <option value="not-sure">Not sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Which IELTS skills do you need to improve (Check all that apply)</label>
+                            <div class="form-check">
+                                <input class="form-check-input listening" type="checkbox" value="listening">
+                                <label class="form-check-label" for="listening">
+                                    Listening
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input reading" type="checkbox" value="reading">
+                                <label class="form-check-label" for="reading">
+                                    Reading
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input writing1" type="checkbox" value="writing1">
+                                <label class="form-check-label" for="writing1">
+                                    Writing Task 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input writing2" type="checkbox" value="writing2">
+                                <label class="form-check-label" for="writing2">
+                                    Writing Task 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input speaking" type="checkbox" value="speaking">
+                                <label class="form-check-label" for="speaking">
+                                    Speaking
+                                </label>
+                            </div>
 
-    </footer>
+                        </div>
+                        <div class="form-group">
+                            <label for="more-info">More information <i class="bi bi-asterisk text-danger" role='img'
+                                    aria-label="required"></i></label>
+                            <textarea class="form-control more-info" rows="5" required
+                                placeholder="Tell me a little bit about you and your IELTS goals."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" class="text-center">
+            <a class="footer-logo" href="index.html">IELTS 1-1</a>
+            <p class="footer-text">&copy;Copyright James Kelly 2021</p>
+
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

@@ -157,10 +157,13 @@ section-details .card-body {
 
 /*-------------------------Contact Page----------------------------*/
 .contact-form {
-    min-height: 100%;
+
     margin-bottom: 60px;
 }
 
+label {
+    font-weight: bold;
+}
 
 /*----------------------------FAQ Page----------------------------*/
 .section-heading {

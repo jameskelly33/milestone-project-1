@@ -19,10 +19,6 @@ body {
     grid-template-columns: 100%;
 }
 
-
-
-
-
 /*-----------------------Nav Bar-----------------------------*/
 .navbar-brand {
     letter-spacing: 4px;
@@ -37,8 +33,7 @@ body {
 
 /*-----------------Homepage Main Section--------------------*/
 .hero-img {
-    background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
-    background-image: url("../images/background-img.jpeg");
+    background-image: url("../images/background-img.jpeg"), linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,8 +63,7 @@ body {
     text-align: center;
 }
 
-.download {
-
+.book-btn {
     margin-bottom: 25px;
 }
 
@@ -93,7 +87,7 @@ section-details .card-body {
 }
 
 
-/* Credit - Code Institue Tutor Support helped with this code an to ensure buttons are always horizontally aligned at the bottom of each card*/
+/* Credit - Code Institue Tutor Support helped with this code an to ensure buttons are always horizontally aligned on each card*/
 
 .btn-blue {
     position: absolute;
@@ -184,9 +178,9 @@ label {
 }
 
 
-/*-----Plus /minus signs on accordion------*/
+/*-----Plus / Minus signs on accordion------*/
 
-/* Credit - code  for plus/ minus signs on adapted from this codepen https://codepen.io/kamelagandhi/pen/WjOpVY */
+/* Credit - code for plus/ minus signs on adapted from this codepen https://codepen.io/kamelagandhi/pen/WjOpVY */
 
 .card-heading>a:before {
     float: right !important;
@@ -243,7 +237,7 @@ label {
         position: relative;
     }
 
-    .download {
+    .book-btn {
         position: absolute;
         left: 65px;
     }

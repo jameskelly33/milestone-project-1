@@ -66,7 +66,7 @@ The colour palette of the site revolves around the dark blue background of the h
 background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%)
 ```
 
-Any text that laid over the background colour was given the colour of 'Aliceblue' to contrast it. The download button on the homepage was given a red colour to stand out against the blue background while matching the red diagonal stripe that goes through the hero image. 
+Any text that laid over the background colour was given the colour of 'Aliceblue' to contrast it. The 'Book a Session' button on the homepage was given a red colour to stand out against the blue background while matching the red diagonal stripe that goes through the hero image. 
 The FAQ accordion was also give a blue background colour to maintain consistency throughout the site. 
 
 ## **Features**
@@ -123,7 +123,7 @@ The FAQ accordion was also give a blue background colour to maintain consistency
 
 **Profile Text**
 
-* A short about me profile text giving information about my teaching history and style. 
+* A short profile text giving information about my teaching history and style. 
 
 **Student Testimonials**
 
@@ -153,7 +153,7 @@ The FAQ accordion was also give a blue background colour to maintain consistency
     * The accordion is open at the first question and answer upon the page loading.
     * Each question and answer can be open or closed by clicking on the question text of the plus/minus sign on the right hand side. 
     * The question text is in blue to maintain the colour theme of the site. 
-    * Below the accordion is a contact email address for sute-users to use if they have any other additional questions.
+    * Below the accordion is a contact email address for site-users to use if they have any other additional questions.
 
 
 **Potential Future Features**
@@ -177,7 +177,7 @@ The FAQ accordion was also give a blue background colour to maintain consistency
 * [Git](https://git-scm.com/)
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-* [Github](https://github.com/)
+* [GitHub](https://github.com/)
     * GitHub is used to store the projects code after being pushed from Git.
 
 * [Gitpod](https://www.gitpod.io/)   
@@ -198,11 +198,11 @@ Testing information can be found in this [separate testing file](testing.md).
 This site was developed using Gitpod and committed and pushed to Github through the built in terminal in Gitpod. 
 
 To deploy this page to GitHub Pages the following steps should be taken.
-1. Log in to **Github**
-2. Selecte the Milestone-Project-1 repository
+1. Log in to **GitHub**
+2. Select the Milestone-Project-1 repository
 3. Click on **Settings**
 4. Select the **Pages** tab on the left sidebar.
-5. In the **Source** settings click on the dropwdown menu that is currently displaying *None*.
+5. In the **Source** settings click on the dropdown menu that is currently displaying *None*.
 6. In the **Select Branch** settings change from *None* to *Master*.
 7. Click on **Save** and the link to the deployed page will appear automatically in a green box with a tick stating "Your site is published". 
 
@@ -233,7 +233,7 @@ To run this site locally the following steps should be taken.
 
 ### Code
 
-* *Bootstrap 4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and faq accordion components and general styling. 
+* *Bootstrap 4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and FAQ accordion components and general styling. 
 
 * The dropdown list of nationalities in the contact form came from this [github gist post](https://gist.github.com/didats/8154290)
 

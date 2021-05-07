@@ -8,7 +8,6 @@
         content="Online IELTS one-to-one tution. Available at a cheap price that will help you achieve your IELTS band 6,7,8 goals in writing, speaking listenign and reading.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -55,19 +54,21 @@
                             aria-label="required"> indicates a required field</i></p>
                     <form class="shadow-lg p-3 mb-5 bg-light rounded">
                         <div class="form-group">
-                            <label for="name">Name <i class="bi bi-asterisk text-danger" role=' img'
+                            <label for="name">Name <i class="bi bi-asterisk text-danger" role='img'
                                     aria-label="required"></i></label>
-                            <input type="text" class="form-control name" aria-describedby="name"
-                                placeholder="Enter name" required></div>
+                            <input type="text" class="form-control" id="name" aria-describedby="name"
+                                placeholder="Enter name" required>
+                        </div>
                         <div class="form-group">
                             <label for="email">Email address <i class="bi bi-asterisk text-danger" role='img'
                                     aria-label="required"></i></label>
-                            <input type="email" class="form-control email" aria-describedby="email"
-                                placeholder="Enter email" required></div>
+                            <input type="email" class="form-control" id="email" aria-describedby="email"
+                                placeholder="Enter email" required>
+                        </div>
                         <div class="form-group">
                             <!--Nationality dropdown list taken from this github post https://gist.github.com/didats/8154290-->
                             <label for="nationality">Nationality</label>
-                            <select class="form-control nationality">
+                            <select class="form-control" id="nationality">
                                 <option value="" disabled selected hidden>Choose your nationality</option>
                                 <option value="afghan">Afghan</option>
                                 <option value="albanian">Albanian</option>
@@ -261,12 +262,13 @@
                                 <option value="yemenite">Yemenite</option>
                                 <option value="zambian">Zambian</option>
                                 <option value="zimbabwean">Zimbabwean</option>
-                            </select></div>
+                            </select>
+                        </div>
                         <!--Language dropdown list taken from this stack overflow post https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form-->
                         <div class="form-group">
                             <label for="language">First Language</label>
-                            <select class="form-control language">
-                                <option value="" dsiabled selected hidden>Choose your first language</option>
+                            <select class="form-control" id="language">
+                                <option value="" disabled selected hidden>Choose your first language</option>
                                 <option value=" Afrikaans">Afrikaans</option>
                                 <option value="Albanian">Albanian</option>
                                 <option value="Arabic">Arabic</option>
@@ -339,11 +341,11 @@
                                 <option value="Vietnamese">Vietnamese</option>
                                 <option value="Welsh">Welsh</option>
                                 <option value="Xhosa">Xhosa</option>
-
-                            </select></div>
+                            </select>
+                        </div>
                         <div class="form-group">
                             <label for="level">Current English Level</label>
-                            <select class="form-control level">
+                            <select class="form-control" id="level">
                                 <option value="" disabled hidden selected>Chose your current English Level</option>
                                 <option value="a1">A1 (Elementary)</option>
                                 <option value="a1">A2 (Beginner)</option>
@@ -355,7 +357,7 @@
                         </div>
                         <div class="form-group">
                             <label for="score">Required IELTS Score </label>
-                            <select class="form-control score">
+                            <select class="form-control" id="score">
                                 <option disabled hidden selected>Choose required score in IELTS</option>
                                 <option value="a1">5.5 or lower</option>
                                 <option value="a1">6</option>
@@ -368,54 +370,50 @@
                         <div class="form-group">
                             <label>Which IELTS skills do you need to improve (Check all that apply)</label>
                             <div class="form-check">
-                                <input class="form-check-input listening" type="checkbox" value="listening">
+                                <input class="form-check-input" id="listening" type="checkbox" value="listening">
                                 <label class="form-check-label" for="listening">
                                     Listening
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input reading" type="checkbox" value="reading">
+                                <input class="form-check-input" id="reading" type="checkbox" value="reading">
                                 <label class="form-check-label" for="reading">
                                     Reading
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input writing1" type="checkbox" value="writing1">
+                                <input class="form-check-input" id="writing1" type="checkbox" value="writing1">
                                 <label class="form-check-label" for="writing1">
                                     Writing Task 1
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input writing2" type="checkbox" value="writing2">
+                                <input class="form-check-input" id="writing2" type="checkbox" value="writing2">
                                 <label class="form-check-label" for="writing2">
                                     Writing Task 2
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input speaking" type="checkbox" value="speaking">
+                                <input class="form-check-input" id="speaking" type="checkbox" value="speaking">
                                 <label class="form-check-label" for="speaking">
                                     Speaking
                                 </label>
                             </div>
-
                         </div>
                         <div class="form-group">
                             <label for="more-info">More information <i class="bi bi-asterisk text-danger" role='img'
                                     aria-label="required"></i></label>
-                            <textarea class="form-control more-info" rows="5" required
+                            <textarea class="form-control" id="more-info" rows="5" required
                                 placeholder="Tell me a little bit about you and your IELTS goals."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send</button>
                     </form>
-
                 </div>
             </div>
         </section>
-
-        <footer class="footer" class="text-center">
+        <footer class="footer text-center">
             <a class="footer-logo" href="index.html">IELTS 1-1</a>
             <p class="footer-text">&copy;Copyright James Kelly 2021</p>
-
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -27,13 +27,13 @@ The lighthouse score in google chrome developer tools was used on each page. Res
 
  As a first-time user of the site who is considering 1-to-1 IELTS online tuition, I want:
 
-1. Information presented in a clear and easy to understand English.
+1. Information presented in clear and easy to understand English.
     * The site's homepage consists of a navigation bar with four clear options. A simple hero image that clearly states that this is a site related to the IELTS exam.
     * A user can understand the basic premise of the website from the two headings (written in plain English) "Learn IELTS Online" and "Improve your band score with one-one lessons" as the primary service this website is offering is online 1-1 IELTS lessons. 
     * The background of all sections of the website has been designed to be minimal and free from clutter or unnecessary images in order to not distract a site user and all language has been kept to plain English as much as possible. 
     
 2. Information about the tutor’s experience with the IELTS exam.
-    * A site user can learn more about the teacher from the 'Learn from the best' sub section on the homepage or visit the About Me page in which there is a profile image, a brief article about the tutor's experience and student testimonials.
+    * A site user can learn more about the teacher from the 'Learn from the best' sub-section on the homepage or visit the About Me page in which there is a profile image, a brief article about the tutor's experience and student testimonials.
 
 3. Examples of the tutor’s teaching materials.
     * A site user can download an example of the tutor's teaching material by clicking the link in the navigation bar. 
@@ -47,7 +47,7 @@ The lighthouse score in google chrome developer tools was used on each page. Res
 
 6. The ability to communicate to the tutor my exact goals and what I need to improve.
     * A site user has the option to contact the tutor by filling in a contact form. By providing basic information about themselves and their English learning background the user can contact the tutor to book a free consultation in regards to booking lessons. There is a text area in which the student can express their goals more clearly. 
-    * In the FAQ page there is also a link to the tutors email address from which the suer can ask any questions not answered in the FAQ section.  
+    * In the FAQ page there is also a link to the tutors email address from which the user can ask any questions not answered in the FAQ section.  
 
 ### **Browser Compatibility**
 
@@ -83,7 +83,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
 
 1. Hero Image 
     * Check Hero Image loads quickly and is displayed clearly.
-    * Check Heading a re clear and easy to read.
+    * Check Headings are clear and easy to read.
     * Hover over button to check hover effect works
     * Click book a session button to check it successfully takes the user to the contact page.
     * Check that headings are centred and the sub-heading and buttons are arranged beneath the central logo of the hero-image on mobile screens. 
@@ -107,29 +107,29 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
     * Check text column is centred below the profile image on tablet and mobile screens.
 
 3. Testimonials Section
-    * Check Student' name is clear to read and is displayed before the flag icon.
+    * Check Student's name is clear to read and is displayed before the flag icon.
     * Check flag icon is clear and is displaying correctly.
     * Check 3-Column column layout on desktop is horizontally aligned.
-    * Check that the 3-colum layout on tablet and mobile is displayed vertically. 
+    * Check that the 3-column layout on tablet and mobile is displayed vertically. 
 
 ### **Contact Page**
 
 1. Contact form
 
-    * Click send with all inputs empty to check required filed error appears on name.  
+    * Click send with all inputs empty to check required field error appears on name.  
     * Click name input field to check highlighting effect is working.
     * Enter name and click send to check  that the form alerts me to enter a valid email.
     * Click email input field to check highlighting effect is working.
     * Enter email address without @ symbol to check that the form alerts me to enter a valid email address.
     * Enter invalid character after @ symbol to check that the form alerts me to enter a valid email address.
     * Click dropdown button on nationality input to check that nationality list appears.
-    * Hover over  nationality input to check that form asks me to select an item in list.
+    * Hover over nationality input to check that form asks me to select an item in list.
     * Click dropdown button on first language input to check that languages list appears.
-    * Hover over  nationality input to check that form asks me to select an item in list.
+    * Hover over nationality input to check that form asks me to select an item in list.
     * Click dropdown button on Current English Level input to check that English Level list appears.
-    * Hover over  Current English Level to check that form asks me to select an item in list.
+    * Hover over Current English Level to check that form asks me to select an item in list.
     * Click dropdown button on Required IELTS score input to check that Required IELTS score list appears.
-    * Hover over  Required IELTS score input to check that form asks me to select an item in list.
+    * Hover over Required IELTS score input to check that form asks me to select an item in list.
     * Click each of the check boxes on and off to confirm that all can be selected and de-selected. 
     * Send form without inputting any text in the more information box to check that the form alerts me that it is a required field.
     * Send form with only required fields completed to check no required input messages appear. 

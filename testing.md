@@ -36,7 +36,7 @@ The lighthouse score in google chrome developer tools was used on each page. Res
     * A site user can learn more about the teacher from the 'Learn from the best' sub section on the homepage or visit the About Me page in which there is a profile image, a brief article about the tutor's experience and student testimonials.
 
 3. Examples of the tutor’s teaching materials.
-    * A site user can download an example of the tutor's teaching material by clicking the download button on the homepage or the link in the navigation bar. 
+    * A site user can download an example of the tutor's teaching material by clicking the link in the navigation bar. 
 
 4. Information about the tutor’s method and style of teaching.
     * The site offers an about me page which not only gives information about the tutor but also their methods of teaching. The student testimonial section also offers site users an opportunity to learn about what other students say about the tutors teaching methods and styles.
@@ -73,7 +73,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
     * Click the **About** link to check it brings user to the about me page and **About** link is selected.
     * Click the **Contact** link to check it brings user to the contact page and **Contact** link is selected.
     * Click the **FAQ** link to check it brings user to the FAQ page **FAQ** link is selected.
-    * Click the **Download Lesson** link to check it successfully downloads a copy of the Free Lesson PDF.
+    * Click the  **Download** link to check it successfully downloads the Free Lesson PDF.
     * Check on mobile screen that nav bar collapses correctly into hamburger and all links work as above. 
 
 2. Footer
@@ -85,7 +85,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
     * Check Hero Image loads quickly and is displayed clearly.
     * Check Heading a re clear and easy to read.
     * Hover over button to check hover effect works
-    * Click download button to check it successfully downloads the Free Lesson PDF.
+    * Click book a session button to check it successfully takes the user to the contact page.
     * Check that headings are centred and the sub-heading and buttons are arranged beneath the central logo of the hero-image on mobile screens. 
 
 2. Learn More Section
@@ -121,6 +121,7 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
     * Enter name and click send to check  that the form alerts me to enter a valid email.
     * Click email input field to check highlighting effect is working.
     * Enter email address without @ symbol to check that the form alerts me to enter a valid email address.
+    * Enter invalid character after @ symbol to check that the form alerts me to enter a valid email address.
     * Click dropdown button on nationality input to check that nationality list appears.
     * Hover over  nationality input to check that form asks me to select an item in list.
     * Click dropdown button on first language input to check that languages list appears.
@@ -168,9 +169,6 @@ All steps were taken on Google Chrome, Firefox, Safari and Internet Explorer on 
 ![Screenshot of subtitle placement issue](assets/images/screenshots/screenshot-subtitle-issue.png)
 
 The cause of the issue was that the media query  set up to move the subheading below the center of the hero image was only set up for tablet resolutions and above. 
-
-![Screenshot of issue]()
-
 The media query was changed to incorporate resolutions from width from 452 and above screen sizes to fix the issue.
 
 
@@ -178,27 +176,26 @@ The media query was changed to incorporate resolutions from width from 452 and a
 
 ![Screenshot of issue](assets/images/screenshots/screenshot-footer-hover-issue.png)
 
-The solution was to target the footer id and the hover pseudo class and add the following CSS code
+The solution was to target the footer class and the hover pseudo class and add the following CSS code
 
-    ```
-    #footer>a:hover {
+```
+    .footer>a:hover {
     text-decoration: none;
-    color: aliceblue}
-    ```
+    color: aliceblue;}
+```
 
-3.  The most significant issue related to the buttons in the learn more section on the homepage. Early on I ran into the problem that because the text above the buttons was of differing length, the horizontal alignment of the buttons would not match due to the content above it.
+3.  The most significant issue related to the buttons in the bottom section on the homepage. Early on I ran into the problem that because the text above the buttons was of differing length, the horizontal alignment of the buttons would not match due to the content above it.
     The first step I took to solve this issue was instead of using a simple bootstrap 3-column layout, I utilised the bootstrap card-deck component to help with the responsiveness. However the issue was still apparent.
 
 ![Screenshot of issue](assets/images/screenshots/screenshot-button-issue.png)
 
-The issue was finally solved with the help of the code institute tutor support and the use of a min-height for each card body and positioning the buttons absolutely at the bottom of each card body. 
+The issue was finally solved with the help of the code institute tutor support and the use of a min-height for each card body and positioning the buttons absolutely. 
  
-
-``` .btn-blue {
+```
+.btn-blue {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
-}
+    transform: translate(-50%, 0);}
 ```
 
 Then media queries were used to ensure that at each breakpoint in which the cards where horizontally aligned there was enough space for the buttons to remain horizontally aligned and not overlap with the text above them.  

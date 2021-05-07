@@ -67,6 +67,7 @@ background: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1)
 ```
 
 Any text that laid over the background colour was given the colour of 'Aliceblue' to contrast it. The download button on the homepage was given a red colour to stand out against the blue background while matching the red diagonal stripe that goes through the hero image. 
+The FAQ accordion was also give a blue background colour to maintain consistency throughout the site. 
 
 ## **Features**
 
@@ -100,7 +101,7 @@ Any text that laid over the background colour was given the colour of 'Aliceblue
 
 * The hero image shows four wooden blocks spelling out IELTS on a blue background with a red diagonal stripe going through. This image was chosen for its bright colour and simplicity. 
 * Overlaying the image are two taglines "Learn IELTS Online" and "Improve your band score online" in the colour 'Aliceblue' with a slight shadow to stand out against the blue background. On larger screens this text is left aligned and on mobile screens it is centred, with the second tag-line appearing below the centre of the hero-image. 
-* Below the text is a red download button when clicked will download a copy of a PDF lesson.
+* Below the text is a red button labelled 'Book a Session' which when clicked will take the user to the contact page.
 
 **Cards**
 
@@ -144,9 +145,8 @@ Any text that laid over the background colour was given the colour of 'Aliceblue
     * An IELTS skills check box field containing the 5 major exam parts of the IELTS exam. 
     * A text area in which students can give more information. The reason which this is a required field is it gives the site owner an opportunity to see the prospective students writing ability. 
 
-  
-
  **FAQ Page**
+
  ![IELTS 1-1 FAQ Page](assets/images/screenshots/faq-mockup.png "IELTS 1-1 FAQ Page")
  
  **Accordion**
@@ -179,6 +179,9 @@ Any text that laid over the background colour was given the colour of 'Aliceblue
 
 * [Github](https://github.com/)
     * GitHub is used to store the projects code after being pushed from Git.
+
+* [Gitpod](https://www.gitpod.io/)   
+    * Gitpod was used as the main IDE to develop the site. 
 
 * [Balsamiq](https://balsamiq.com/)
     * Balsamiq was used to create the wireframes during the design process.
@@ -230,19 +233,19 @@ To run this site locally the following steps should be taken.
 
 ### Code
 
-[Bootstrap 4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and faq accordion components and general styling. 
+* *Bootstrap 4](https://getbootstrap.com/)  grid system a was used to make the site responsive and the class library was used for card deck, contact form and faq accordion components and general styling. 
 
-The dropdown list of nationalities in the contact form came from this [github gist post](https://gist.github.com/didats/8154290)
+* The dropdown list of nationalities in the contact form came from this [github gist post](https://gist.github.com/didats/8154290)
 
-The dropdown list of languages in the contact form came from this [stack overflow post](https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form)
+* The dropdown list of languages in the contact form came from this [stack overflow post](https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form)
 
-The background linear-gradient colour of the footer was created by uploading the hero image to this [CSS Gradient Generator] (https://cssgradient.io/)
+* The background linear-gradient colour of the footer was created by uploading the hero image to this [CSS Gradient Generator](https://cssgradient.io/)
 
-The flag icons for the student testimonials were imported from this [library] (https://github.com/lipis/flag-icon-css)
+* The flag icons for the student testimonials were imported from this [library](https://github.com/lipis/flag-icon-css)
 
-The Plus/ Minus icons on for the Bootstrap FAQ accordion was adapted from this [codepen] (https://codepen.io/kamelagandhi/pen/WjOpVY)
+* The Plus/ Minus icons on for the Bootstrap FAQ accordion was adapted from this [codepen](https://codepen.io/kamelagandhi/pen/WjOpVY)
 
-The sticky footer code was adapted from this [youtube video](https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing)
+* The code for the footer was taken from this [article](https://dev.to/niorad/keeping-the-footer-at-the-bottom-with-css-grid-15mf) 
 
 
 

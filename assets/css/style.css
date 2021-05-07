@@ -71,15 +71,13 @@ body {
 
 .bottom-section {
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .bottom-section .card {
     border: none;
 }
 
-section-details .card-body {
-    height: 400px;
-}
 
 .section-details {
     height: 400px;
@@ -87,19 +85,9 @@ section-details .card-body {
 }
 
 
-/* Credit - Code Institue Tutor Support helped with this code an to ensure buttons are always horizontally aligned on each card*/
-
-.btn-blue {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
+/*------------------------ Footer--------------------------------*/
 
 
-/*---------------------------Sticky Footer--------------------------------*/
-
-
-/* Credit - Code for sticky footer was taken from this youtube video https://www.youtube.com/watch?v=qlCIXXhSX6Y&t=385s&ab_channel=DaniKrossing and adapted slightly for the site's needs*/
 .footer {
     background-image: linear-gradient(105deg, rgba(50, 116, 166, 1) 0%, rgba(2, 34, 59, 1) 100%);
 
@@ -119,7 +107,7 @@ section-details .card-body {
     color: aliceblue;
 }
 
-/* Change the colour from the defailt blue to aliceblue in order to stand out against the blue background of footer*/
+/* Change the colour from the default blue to aliceblue in order to stand out against the blue background of footer*/
 
 .footer>a:hover {
     text-decoration: none;
@@ -143,11 +131,9 @@ section-details .card-body {
     max-width: 100%;
 }
 
-
 .testimonials {
     margin-bottom: 80px;
 }
-
 
 /*-------------------------Contact Page----------------------------*/
 .contact-form {
@@ -180,7 +166,7 @@ label {
 
 /*-----Plus / Minus signs on accordion------*/
 
-/* Credit - code for plus/ minus signs on adapted from this codepen https://codepen.io/kamelagandhi/pen/WjOpVY */
+/* Credit - code for plus / minus signs on adapted from this codepen https://codepen.io/kamelagandhi/pen/WjOpVY */
 
 .card-heading>a:before {
     float: right !important;
@@ -201,50 +187,7 @@ label {
 }
 
 /*----------------------------Media Queries------------------------------*/
-
-
-/*----Hero Image and cover text-------*/
-
-
-@media screen and (min-width:452px) {
-    .hero-img {
-        height: 800px;
-    }
-
-    .cover-heading {
-        margin-top: 200px;
-        font-size: 50px;
-    }
-
-    .cover-sub-heading {
-        font-size: 32px;
-        margin-top: 300px;
-    }
-}
-
-/* Left-align text and buttons on large screens*/
-
-@media screen and (min-width:1024px) {
-    .cover-heading {
-        text-align: left;
-        margin-top: 50px;
-        position: relative;
-    }
-
-    .cover-sub-heading {
-        text-align: left;
-        margin-top: 30px;
-        position: relative;
-    }
-
-    .book-btn {
-        position: absolute;
-        left: 65px;
-    }
-}
-
-
-/*-----------Section Details Card Body Height and Button Position---------*/
+/* Credit - Code Institue Tutor Support helped with btn-blue code to ensure buttons are always horizontally aligned on each card*/
 
 @media screen and (min-width:320px) {
 
@@ -258,6 +201,8 @@ label {
         transform: translate(-50%, 0);
         bottom: 60px
     }
+
+
 }
 
 @media screen and (min-width:425px) {
@@ -273,43 +218,24 @@ label {
         bottom: 60px
     }
 
-}
-
-
-@media screen and (min-width:992px) {
-
-    .section-details .card-body {
-        min-height: 375px;
-    }
-
-    .btn-blue {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 60px
-    }
-}
-
-@media screen and (min-width:1440px) {
-    section-details .card-body {
-        min-height: 300px;
-    }
-
-    .btn-blue {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 100px
-    }
-}
-
-/*---------Section Details headings and text----------*/
-
-@media screen and (min-width:450px) {
-
     .section-details p {
         font-size: 1.2rem;
     }
+
+    .hero-img {
+        height: 800px;
+    }
+
+    .cover-heading {
+        margin-top: 200px;
+        font-size: 50px;
+    }
+
+    .cover-sub-heading {
+        font-size: 32px;
+        margin-top: 300px;
+    }
+
 }
 
 @media screen and (min-width:520px) {
@@ -332,6 +258,17 @@ label {
 
 @media screen and (min-width:992px) {
 
+    .section-details .card-body {
+        min-height: 375px;
+    }
+
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 60px
+    }
+
     .card-header h2 a {
         font-size: 1.7rem;
     }
@@ -341,15 +278,30 @@ label {
     }
 }
 
+@media screen and (min-width:1024px) {
+    .cover-heading {
+        text-align: left;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .cover-sub-heading {
+        text-align: left;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .book-btn {
+        position: absolute;
+        left: 65px;
+    }
+}
+
 @media screen and (min-width:1200px) {
     .section-details p {
         font-size: 1.2rem;
     }
-}
 
-/*---------About me page profile text font size------------*/
-
-@media screen and (min-width:1200px) {
     .profile-txt {
         font-size: 1.3rem;
     }
@@ -360,6 +312,17 @@ label {
 }
 
 @media screen and (min-width:1440px) {
+    section-details .card-body {
+        min-height: 300px;
+    }
+
+    .btn-blue {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 100px
+    }
+
     .profile-txt {
         font-size: 1.5rem;
     }
@@ -368,6 +331,7 @@ label {
         font-size: 1.5rem;
     }
 }
+
 
 @media screen and (min-width:1800px) {
     .profile-txt {
